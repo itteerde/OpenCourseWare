@@ -92,3 +92,8 @@
     (+ x dx))
   (* (sum f (+ a (/ dx 2.0)) add-dx b)
      dx))
+
+(define (inc n) (+ n 1))
+(define (sum-cubes a b)
+  (sum cube a inc b))
+(define (cube x) (* x x x))
