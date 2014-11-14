@@ -166,7 +166,9 @@
 (define (equal-rat? x y)
   (= (* (numer x) (denom y))
      (* (numer y) (denom y))))
-(define (make-rat n d) (cons n d))
+(define (make-rat n d)
+  (let ((g (gcd n d)))
+    (cons (/ n g) (/ d g))))
 (define (numer x) (car x))
 (define (denom x) (cdr x))
 (define (print-rat x)
@@ -174,3 +176,23 @@
   (display (numer x))
   (display "/")
   (display (denom x)))
+
+(define nil '())
+
+; p. 158
+(define (accumulate op initial sequence)
+  (if (null? sequence)
+      initial
+      (op (car sequence)
+          (accumulate op initial (cdr sequence)))))
+
+; p. 167
+(define (flatmap proc seq)
+  (accumulate append '() (map proc seq)))
+(define (permutations s)
+  (if (null? s)
+      (list nil)
+      (flatmap (lambda (x)
+                 (map (lambda (p) (cons x p))
+                      (permutations (remove x s))))
+               s)))
