@@ -88,11 +88,12 @@
       (+ (term a)
          (sum term (next a) next b))))
 (define (integral f a b dx)
-  (define (add-dx x)
-    (+ x dx))
-  (* (sum f (+ a (/ dx 2.0)) add-dx b)
+  (* (sum f
+          (+ a (/ dx 2.0))
+          (lambda (x) (+ x dx))
+          b)
      dx))
-
+  
 (define (inc n) (+ n 1))
 (define (sum-cubes a b)
   (sum cube a inc b))
