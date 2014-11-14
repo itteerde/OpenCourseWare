@@ -31,3 +31,13 @@
         (iter (* counter product)
               (+ counter 1))))
   (iter 1 1))
+
+; only call this for realy small x, y. If you are not familar with
+; the ackermann function think how many recursive calls of itself
+; it will generate. You can call it as (ackermann 2 5) or 
+; (ackermann 4 2) but that is about as far as you'll get.
+(define (ackermann x y)
+  (cond ((= y 0) 0)
+        ((= x 0) (* 2 y))
+        ((= y 1) 2)
+        (else (ackermann (- x 1) (ackermann x (- y 1))))))
