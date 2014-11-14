@@ -133,3 +133,8 @@
           next
           (try next))))
   (try first-guess))
+
+; p. 99. Newton's method
+(define (deriv g)
+  (lambda (x) (/ (- (g (+ x dx)) (g x)) dx)))
+(define dx 0.000001)
