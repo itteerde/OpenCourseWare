@@ -186,6 +186,13 @@
       (op (car sequence)
           (accumulate op initial (cdr sequence)))))
 
+; p. 159
+(define  (enumerate-tree tree)
+  (cond ((null? tree) nil)
+        ((not (pair? tree)) (list tree))
+         (else (append (enumerate-tree (car tree))
+                       (enumerate-tree (cdr tree))))))
+
 ; p. 167
 (define (flatmap proc seq)
   (accumulate append '() (map proc seq)))
