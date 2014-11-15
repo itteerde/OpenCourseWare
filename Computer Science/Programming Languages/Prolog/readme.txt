@@ -1,0 +1,1 @@
+The Prolog Programs are meant to be compatible with SWIProlog. They might work in other environments, especially in SicStus Prolog, but I intend to maintain compatibility with SWIProlog only. So please let me know if anything does not work with that implementation (current version on any OS).
