@@ -272,3 +272,30 @@
         ((element-of-set? (car set1) set2)
          (cons (car set1) (intersection-set (cdr set1) set2)))
         (else (intersection-set (cdr set1) set2))))
+
+; p. 212
+(define (entry tree) (car tree))
+(define (left-branch tree) (cadr tree))
+(define (right-branch tree) (caddr tree))
+(define (make-tree entry left right)
+  (list entry left right))
+
+(define (element-of-tree? x tree)
+  (cond ((null? tree) #f)
+        ((= x (entry tree)) #t)
+        ((< x (entry tree))
+         (element-of-tree? x (left-branch tree)))
+        ((> x (entry tree))
+         (element-of-tree? x (right-branch tree)))))
+
+(define (adjoin-tree x tree)
+  (cond ((null? tree) (make-tree x '() '()))
+        ((= x (entry tree)) tree)
+        ((< x (entry tree))
+         (make-tree (entry tree)
+                    (adjoin-tree x (left-branch tree))
+                    (right-branch tree)))
+        ((> x (entry tree))
+         (make-tree (entry tree) (left-branch tree)
+                    (adjoin-tree x (right-branch tree))))))
+
