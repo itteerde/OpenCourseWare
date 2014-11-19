@@ -1,0 +1,1 @@
+The examples are meant to be compatible with GHCi. If they are not let me know, I'll probably fix that.
