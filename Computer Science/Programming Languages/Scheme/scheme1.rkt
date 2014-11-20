@@ -88,3 +88,17 @@
         (+ (fsum (+ i 1)) (f (+ a (* i h))))))
   (* h (+ (average (f a) (f b)) (fsum 1))))
 
+(define (make-nstf f)
+  (lambda (x) (nst f x)))
+
+(define (nst f first-guess)
+  (define tolerance 0.0001)
+  (define (close-enough? v1 v2)
+  (< (abs (- v1 v2))
+     tolerance))
+  (define (try guess)
+    (let ((next (- guess (/ (f guess) ((ableiten f tolerance) guess)))))
+      (if (close-enough? guess next)
+          next
+          (try next))))
+  (try first-guess))
