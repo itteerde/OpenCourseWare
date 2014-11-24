@@ -1,0 +1,63 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1298,         53]
+NotebookOptionsPosition[       988,         37]
+NotebookOutlinePosition[      1334,         52]
+CellTagsIndexPosition[      1291,         49]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"i", "=", "2"}], "1999999"], 
+  RowBox[{"(", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"PrimeQ", "[", "i", "]"}], ",", "i", ",", "0"}], "]"}], 
+   ")"}]}]], "Input",
+ CellChangeTimes->{{3.6258601747505093`*^9, 3.625860237761033*^9}}],
+
+Cell[BoxData["142913828922"], "Output",
+ CellChangeTimes->{3.625860241100439*^9}]
+}, Open  ]]
+},
+WindowSize->{767, 738},
+WindowMargins->{{Automatic, 283}, {4, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 308, 9, 57, "Input"],
+Cell[891, 33, 81, 1, 64, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
