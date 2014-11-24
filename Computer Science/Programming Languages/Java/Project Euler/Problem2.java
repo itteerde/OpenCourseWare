@@ -8,7 +8,7 @@ public class Problem2 {
 		BigInteger sum = new BigInteger("0");
 		BigInteger [] fibs = {new BigInteger("0"), new BigInteger("1"), new BigInteger("2")};
 		BigInteger two = new BigInteger("2");
-		BigInteger max = two.shiftLeft(2<<14);
+		BigInteger max = new BigInteger("4000000");//two.shiftLeft(2<<14);
 		BigInteger zero = new BigInteger("0");
 		
 		long start = System.currentTimeMillis();
@@ -30,7 +30,7 @@ public class Problem2 {
 		int blockSize = 64;
 		String sumString = sum.toString();
 		for(int i = 0 ; i<= sumString.length() / blockSize; i++){
-			System.out.println(sumString.substring(i * blockSize, Math.min(sumString.length()-1, i * blockSize + blockSize)));
+			System.out.println(sumString.substring(i * blockSize, Math.min(sumString.length(), i * blockSize + blockSize)));
 		}
 		System.out.println(sum.bitLength()+ "("+duration+"ms)");
 	}
