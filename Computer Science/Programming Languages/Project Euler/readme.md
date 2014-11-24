@@ -15,3 +15,5 @@ There are implementations of the same problems for different languages within th
 > Find the sum of all the multiples of 3 or 5 below 1000.
 
 For measurement find the sum of all multiples of 3 or 5 below 10,000,000.
+
+1. Mathematica: 1.09 seconds

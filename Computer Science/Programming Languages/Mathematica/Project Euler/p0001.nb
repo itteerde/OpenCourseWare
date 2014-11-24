@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      1562,         60]
-NotebookOptionsPosition[      1248,         44]
-NotebookOutlinePosition[      1595,         59]
-CellTagsIndexPosition[      1552,         56]
+NotebookDataLength[      1822,         67]
+NotebookOptionsPosition[      1508,         51]
+NotebookOutlinePosition[      1855,         66]
+CellTagsIndexPosition[      1812,         63]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,25 +21,32 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell[BoxData[
- RowBox[{
-  UnderoverscriptBox["\[Sum]", 
-   RowBox[{"n", "=", "0"}], "10000000"], 
-  RowBox[{"(", 
-   RowBox[{"If", "[", 
-    RowBox[{
-     RowBox[{"Or", "[", 
-      RowBox[{
+ RowBox[{"Timing", "[", 
+  RowBox[{
+   UnderoverscriptBox["\[Sum]", 
+    RowBox[{"n", "=", "0"}], "10000000"], 
+   RowBox[{"(", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"Or", "[", 
        RowBox[{
-        RowBox[{"Mod", "[", 
-         RowBox[{"n", ",", "3"}], "]"}], "\[Equal]", "0"}], ",", 
-       RowBox[{
-        RowBox[{"Mod", "[", 
-         RowBox[{"n", ",", "5"}], "]"}], "\[Equal]", "0"}]}], "]"}], ",", "n",
-      ",", "0"}], "]"}], ")"}]}]], "Input",
- CellChangeTimes->{{3.6257719893214483`*^9, 3.6257721361298447`*^9}}],
+        RowBox[{
+         RowBox[{"Mod", "[", 
+          RowBox[{"n", ",", "3"}], "]"}], "\[Equal]", "0"}], ",", 
+        RowBox[{
+         RowBox[{"Mod", "[", 
+          RowBox[{"n", ",", "5"}], "]"}], "\[Equal]", "0"}]}], "]"}], ",", 
+      "n", ",", "0"}], "]"}], ")"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6257719893214483`*^9, 3.6257721361298447`*^9}, {
+  3.6258224536931114`*^9, 3.625822460732724*^9}}],
 
-Cell[BoxData["23333341666668"], "Output",
- CellChangeTimes->{{3.6257720910822687`*^9, 3.6257721383079696`*^9}}]
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1.09200699999999994993515883834334090352`6.058825335578406", ",", 
+   "23333341666668"}], "}"}]], "Output",
+ CellChangeTimes->{{3.6257720910822687`*^9, 3.6257721383079696`*^9}, {
+  3.6258224627159276`*^9, 3.6258224698159404`*^9}}]
 }, Open  ]]
 },
 WindowSize->{767, 738},
@@ -59,12 +66,11 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 538, 16, 57, "Input"],
-Cell[1121, 40, 111, 1, 64, "Output"]
+Cell[580, 22, 636, 18, 57, "Input"],
+Cell[1219, 42, 273, 6, 64, "Output"]
 }, Open  ]]
 }
 ]
 *)
 
 (* End of internal cache information *)
-
