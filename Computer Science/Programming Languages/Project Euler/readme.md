@@ -16,4 +16,5 @@ There are implementations of the same problems for different languages within th
 
 For measurement find the sum of all multiples of 3 or 5 below 10,000,000 (23,333,331,666,668 which is less than 2^63-1).
 
-1. Mathematica: 1.09 seconds
+1. Java: 32ms
+2. Mathematica: 1.09s
