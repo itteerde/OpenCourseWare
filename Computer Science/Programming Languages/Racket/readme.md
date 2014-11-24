@@ -1,0 +1,1 @@
+Why Racket and no longer Scheme or Lisp? Read http://racket-lang.org/
