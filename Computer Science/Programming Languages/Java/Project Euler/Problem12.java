@@ -1,16 +1,11 @@
 package de.itter.euler;
 
-import java.math.BigInteger;
-
 public class Problem12 {
 	
-	public static final BigInteger ZERO = new BigInteger("0");
-	public static final BigInteger ONE = new BigInteger("1");
-	public static final BigInteger TWO = new BigInteger("2");
-
 	public static void main(String[] args) {
-		BigInteger i = ONE;
-		BigInteger triNum = ONE;
+		
+		long i = 1;
+		long triNum = 1;
 		
 		for(;;){
 			int numberOfDivisors = numberOfDivisors(triNum);
@@ -19,23 +14,23 @@ public class Problem12 {
 				return;
 			}
 			System.out.println("triNum: "+triNum+" ("+numberOfDivisors+" divisors)");
-			triNum = triNum.add(i);
-			i = i.add(ONE);
+			triNum += i;
+			i++;
 		}
 	}
 	
-	public static int numberOfDivisors(BigInteger x){
+	public static int numberOfDivisors(long x){
 		int res = 0;
 		
-		BigInteger i = new BigInteger("1");
+		long i = 1;
 		for(;;){
-			if(i.multiply(TWO).compareTo(x) > 0){
+			if(i * 2 > x){
 				return res+1;
 			}
-			if(x.remainder(i).equals(ZERO)){
+			if(x % i == 0){
 				res++;
 			}
-			i = i.add(ONE);
+			i++;
 		}
 	}
 
