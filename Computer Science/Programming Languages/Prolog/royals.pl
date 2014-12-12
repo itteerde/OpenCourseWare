@@ -25,8 +25,40 @@ mother(diana_princess_of_wales, prince_henry).
 female(camila_duchess_of_cornwall).
 
 female(princess_anne).
+married(princess_anne, mark_phillips).
+married(princess_anne, timothy_laurence).
+mother(princess_anne, zara_phillips).
+mother(princess_anne, peter_phillips).
+
 male(prince_andrew).
+married(prince_andrew, sarah_duchess_of_york).
+father(prince_andrew, princess_beatrice).
+father(prince_andrew, princess_eugenie).
+
+mother(sarah_duchess_of_york, princess_beatrice).
+mother(sarah_duchess_of_york, princess_eugenie).
+
 male(prince_edward).
+married(prince_edward, sophie_countess_of_wessex).
+father(prince_edward, lady_louise).
+father(prince_edward, viscount_severn).
+
+female(sophie_countess_of_wessex).
+mother(sophie_countess_of_wessex, lady_louise).
+mother(sophie_countess_of_wessex, viscount_severn).
+
+female(lady_louise).
+male(viscount_severn).
+
+male(mark_phillips).
+father(mark_phillips, peter_phillips).
+father(mark_phillips, zara_phillips).
+
+male(peter_phillips).
+married(peter_phillips, autumn_kelly).
+
+female(zara_phillips).
+female(autumn_kelly).
 
 queen(X) :-
 	majesty(X),
