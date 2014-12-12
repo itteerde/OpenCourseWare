@@ -64,6 +64,10 @@ queen(X) :-
 	majesty(X),
 	female(X).
 	
+king(X) :-
+	majesty(X),
+	male(X).
+	
 couple(X, Y) :- 
 	married(X, Y),
 	male(X).
@@ -131,3 +135,22 @@ grandfather(X, Y) :-
 grandmother(X, Y) :-
 	grandparent(X, Y),
 	female(X).
+
+grandchild(X, Y) :-
+	grandparent(Y, X).
+	
+granddaughter(X, Y) :-
+	grandchild(X, Y),
+	female(X).
+	
+grandson(X, Y) :-
+	grandchild(X, Y),
+	male(X).
+	
+wife(X, Y) :-
+	couple(X, Y),
+	female(X).
+	
+husband(X, Y) :-
+	couple(X, Y),
+	male(X).
