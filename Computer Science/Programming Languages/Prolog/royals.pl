@@ -64,7 +64,18 @@ queen(X) :-
 	majesty(X),
 	female(X).
 	
-married(X, Y) :- married(Y, X).
+couple(X, Y) :- 
+	married(X, Y),
+	male(X).
+couple(X, Y) :- 
+	male(X),
+	married(Y, X).
+couple(X, Y) :- 
+	married(X, Y),
+	female(X).
+couple(X, Y) :- 
+	female(X),
+	married(Y, X).
 
 sibling(X, Y) :-
 	mother(M, X),
