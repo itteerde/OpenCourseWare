@@ -85,7 +85,7 @@ public class Problem17 {
 				res.append("thirty");
 				break;
 			case 4:
-				res.append("fourty");
+				res.append("forty");
 				break;
 			case 5:
 				res.append("fifty");
