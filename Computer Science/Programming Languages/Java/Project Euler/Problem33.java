@@ -11,14 +11,14 @@ public class Problem33 {
 				for(int c=1;c<=9;c++){
 					for(int d=1;d<=9;d++){
 						if(isCancellingFraction(a, b, c, d)){
-							System.out.println(a+","+b+","+c+","+d);
+							System.out.println(a+""+b+" / "+c+""+d);
 							res = res.multiply(new Fraction(a*10+b,c*10+d));
 						}
 					}
 				}
 			}
 		}
-		System.out.println(res);
+		System.out.println("Product: "+res);
 	}
 	
 	public static boolean isCancellingFraction(int a,int b,int c,int d){
