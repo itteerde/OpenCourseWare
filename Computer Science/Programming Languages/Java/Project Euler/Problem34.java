@@ -10,7 +10,8 @@ public class Problem34 {
 		}
 		
 		int sum = 0;
-		for(int i=3;;i++){
+		int limit = 7 * factorials[9];
+		for(int i=3;i<limit;i++){
 			if(isDigitalFactorialSum(i, factorials)){
 				sum += i;
 				System.out.println(i+", sum:"+sum);
