@@ -102,7 +102,7 @@
           (else (iter (tail ps)))))
   (iter primes))
 
-(define (fib n) (nth n (fib-stream)))
+(define (fib n) (nth n fib-stream))
 
 (define fib-stream 
   ((lambda ()
@@ -486,3 +486,16 @@
   (cond ((= n 0) '())
         ((empty-stream? s) '())
         (else (cons (head s) (lists (- n 1) (tail s))))))
+
+(define (memoize function)
+  (let ((memory (make-hash)))
+    (lambda args
+      (apply values
+             (hash-ref memory
+                      args
+                      (lambda ()
+                        (call-with-values
+                         (lambda () (apply function args))
+                         (lambda results
+                           (hash-set! memory args results)
+                           results))))))))
