@@ -10,14 +10,13 @@ solve(StartIdx,EndIdx,Acc,Result) :-
 	data(StartIdx,Sudoku),
 	sudoku(Sudoku),
 	maplist(writeln,Sudoku),
-	sum(Sum,Sudoku),
-	Result is Acc+Sum.
+	prod(Prod,Sudoku),
+	Result is Acc+Prod.
 	
 solve(StartIdx,EndIdx,Acc,Result) :-
 	StartIdxN is StartIdx +1,
 	solve(StartIdx,StartIdx,R),
-	AccN is Acc + R,
-	solve(StartIdxN,EndIdx,AccN,ResultN),
+	solve(StartIdxN,EndIdx,R,ResultN),
 	Result is Acc + ResultN.
 
 	
@@ -37,7 +36,11 @@ blocks([A,B,C|Bs1], [D,E,F|Bs2], [G,H,I|Bs3]) :-
 		
 sum(R,[[X1,X2,X3|_]|_]) :-
 	R is X1 + X2 + X3.
- 			
+
+prod(R,[[X1,X2,X3|_]|_]) :-
+	R is X1 * 100 + X2 * 10 + X3.
+
+	
 data(1, [[_,_,_,_,2,_,6,_,_],
 		 [9,_,_,3,_,5,_,_,1],
 		 [_,_,1,8,_,6,4,_,_],
