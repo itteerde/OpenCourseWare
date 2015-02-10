@@ -6,7 +6,7 @@ import java.util.Vector;
 
 public class Problem51 {
 
-	private static long[] primes = primes(5000000);
+	private static long[] primes = primes(1000000);
 	private static boolean[][] patterns;
 
 	public static void main(String[] args) {
@@ -45,33 +45,20 @@ public class Problem51 {
 	}
 
 	private static void init() {
-		patterns = new boolean[128][8];
+		patterns = new boolean[32][6];
 		int pattern = 0;
 		for (int b1 = 0; b1 <= 1; b1++) {
 			for (int b2 = 0; b2 <= 1; b2++) {
 				for (int b3 = 0; b3 <= 1; b3++) {
 					for (int b4 = 0; b4 <= 1; b4++) {
 						for (int b5 = 0; b5 <= 1; b5++) {
-							for (int b6 = 0; b6 <= 1; b6++) {
-								for (int b7 = 0; b7 <= 1; b7++) {
-									patterns[pattern][0] = b1 == 0 ? false
-											: true;
-									patterns[pattern][1] = b2 == 0 ? false
-											: true;
-									patterns[pattern][2] = b3 == 0 ? false
-											: true;
-									patterns[pattern][3] = b4 == 0 ? false
-											: true;
-									patterns[pattern][4] = b5 == 0 ? false
-											: true;
-									patterns[pattern][5] = b6 == 0 ? false
-											: true;
-									patterns[pattern][6] = b7 == 0 ? false
-											: true;
-									patterns[pattern][7] = false;
-									pattern++;
-								}
-							}
+							patterns[pattern][0] = b1 == 0 ? false : true;
+							patterns[pattern][1] = b2 == 0 ? false : true;
+							patterns[pattern][2] = b3 == 0 ? false : true;
+							patterns[pattern][3] = b4 == 0 ? false : true;
+							patterns[pattern][4] = b5 == 0 ? false : true;
+							patterns[pattern][5] = false;
+							pattern++;
 						}
 					}
 				}
