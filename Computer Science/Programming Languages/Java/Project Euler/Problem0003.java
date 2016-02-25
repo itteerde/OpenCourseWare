@@ -14,7 +14,7 @@ public class Problem0003 {
 		new SiebErastosthenes(primeMaximum);
 		
 		for(int i=0;;i++){
-			if(theNumber % SiebErastosthenes.primes.elementAt(i) == 0){
+			while(theNumber % SiebErastosthenes.primes.elementAt(i) == 0){
 				primeFactors.addElement(SiebErastosthenes.primes.elementAt(i));
 				theNumber /= SiebErastosthenes.primes.elementAt(i);
 			}
