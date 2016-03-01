@@ -7,14 +7,14 @@ import java.util.Vector;
 public class Problem0062 {
 
 	public static void main(String[] args) {
-		HashMap<String,Vector<Integer>> map = new HashMap<String,Vector<Integer>>();
+		HashMap<String,Vector<Long>> map = new HashMap<String,Vector<Long>>();
 		
-		for(int i=1;;i++){
-			String key = key((long) Math.pow(i, 3));
+		for(long i=1;;i++){
+			String key = key(i*i*i);
 			if(!map.containsKey(key)){
-				map.put(key, new Vector<Integer>());
+				map.put(key, new Vector<Long>());
 			}
-			map.get(key).add(new Integer(i));
+			map.get(key).add(new Long(i));
 			if(map.get(key).size() == 5){
 				System.out.println(map.get(key));
 				return;
