@@ -55,5 +55,25 @@ public class SiebErastosthenes {
 		return primes.elementAt(n-1).intValue();
 	}
 	
+	public static Vector<Integer> primes(int maximun){
+		if(primes.size() == 0 || primes.elementAt(primes.size()-1) < maximum){
+			new SiebErastosthenes(maximun);
+		}
+		
+		return SiebErastosthenes.primes;
+	}
+	
+	public static Vector<Integer> primes(){
+		return primes(100);
+	}
+	
+	public static boolean isPrime(int n){
+		if(n > maximum){
+			new SiebErastosthenes(n);
+		}
+		
+		return primes.contains(n);
+	}
+	
 
 }
