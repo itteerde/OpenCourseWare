@@ -15,11 +15,26 @@ public class Factorization {
 	 * @return
 	 */
 	public static BigInteger[] factorization(BigInteger n) {
-		return null;
+		return Algorithms.primeFactors(n);
 	}
 
+	/**
+	 * Convenience wrapper for
+	 * <code>BigInteger[] factorization(BigInteger n)</code>, therefore
+	 * relatively slow.
+	 * 
+	 * @param n
+	 * @return
+	 */
 	public static long[] factorization(long n) {
-		return null;
+
+		BigInteger[] factors = factorization(new BigInteger(Long.toString(n)));
+
+		long[] result = new long[factors.length];
+		for (int i = 0; i < factors.length; i++) {
+			result[i] = factors[i].longValue();
+		}
+		return result;
 	}
 
 	/**
