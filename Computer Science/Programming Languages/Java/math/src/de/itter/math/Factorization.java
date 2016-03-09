@@ -7,15 +7,15 @@ public class Factorization {
 	/**
 	 * <b>TODO:</b>
 	 * <ul>
-	 * <li>Should it work for negative numbers as <code>FactorIneger</code> does
-	 * in <i>Mathematica</i> giving one additional factor of -1?</li>
+	 * <li>Should it work for negative numbers as <code>FactorInteger</code>
+	 * does in <i>Mathematica</i> giving one additional factor of -1?</li>
 	 * </ul>
 	 * 
 	 * @param n
 	 * @return
 	 */
 	public static BigInteger[] factorization(BigInteger n) {
-		return Algorithms.primeFactors(n);
+		return Algorithms.factorize(n);
 	}
 
 	/**
