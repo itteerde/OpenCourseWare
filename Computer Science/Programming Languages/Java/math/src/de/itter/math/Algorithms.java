@@ -57,4 +57,20 @@ public class Algorithms {
 
 		return result;
 	}
+
+	public static long[] amicableChain(long n) {
+		return null;
+	}
+
+	public static boolean isPerfectNumber(long n) {
+		return false;
+	}
+
+	public static long[] properDivisors(long n) {
+		return null;
+	}
+
+	public static double root(double num, double root) {
+		return Math.pow(Math.E, Math.log(num) / root);
+	}
 }
