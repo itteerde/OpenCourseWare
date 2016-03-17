@@ -1,6 +1,8 @@
 package de.itter.math;
 
 import java.math.BigInteger;
+import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.Vector;
 
 public class Algorithms {
@@ -67,7 +69,21 @@ public class Algorithms {
 	}
 
 	public static long[] properDivisors(long n) {
-		return null;
+		LinkedList<Long> divisors = new LinkedList<Long>();
+
+		for (long i = 1; i <= n / 2; i++) {
+			if (n % i == 0) {
+				divisors.add(i);
+			}
+		}
+
+		long[] result = new long[divisors.size()];
+		Iterator<Long> iterator = divisors.iterator();
+		for (int i = 0; i < divisors.size(); i++) {
+			result[i] = iterator.next();
+		}
+
+		return result;
 	}
 
 	public static double root(double num, double root) {
