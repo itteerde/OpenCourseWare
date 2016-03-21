@@ -1,0 +1,658 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     26128,        649]
+NotebookOptionsPosition[     25293,        614]
+NotebookOutlinePosition[     25640,        629]
+CellTagsIndexPosition[     25597,        626]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"For", "[", 
+    RowBox[{
+     RowBox[{"i", "=", "123"}], ",", 
+     RowBox[{"i", "<", "10000000"}], ",", 
+     RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"n", "=", 
+       RowBox[{"Prime", "[", "i", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"PrimeQ", "[", 
+          RowBox[{
+           RowBox[{"10", " ", "n"}], " ", "+", "3"}], "]"}], "&&", 
+         RowBox[{"PrimeQ", "[", 
+          RowBox[{
+           RowBox[{"3", " ", 
+            SuperscriptBox["10", 
+             RowBox[{"Ceiling", "[", 
+              RowBox[{"Log10", "[", "n", "]"}], "]"}]]}], "+", "n"}], "]"}]}],
+         ",", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"PrimeQ", "[", 
+            RowBox[{
+             RowBox[{"10", " ", "n"}], "+", "7"}], "]"}], "&&", 
+           RowBox[{"PrimeQ", "[", 
+            RowBox[{
+             RowBox[{"7", " ", 
+              SuperscriptBox["10", 
+               RowBox[{"Ceiling", "[", 
+                RowBox[{"Log10", "[", "n", "]"}], "]"}]]}], "+", "n"}], 
+            "]"}]}], ",", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"PrimeQ", "[", 
+              RowBox[{
+               RowBox[{"1000", " ", "n"}], "+", "109"}], "]"}], "&&", 
+             RowBox[{"PrimeQ", "[", 
+              RowBox[{
+               RowBox[{"109", " ", 
+                SuperscriptBox["10", 
+                 RowBox[{"Ceiling", "[", 
+                  RowBox[{"Log10", "[", "n", "]"}], "]"}]]}], "+", "n"}], 
+              "]"}]}], ",", "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"PrimeQ", "[", 
+                RowBox[{
+                 RowBox[{"1000", " ", "n"}], "+", "673"}], "]"}], "&&", 
+               RowBox[{"PrimeQ", "[", 
+                RowBox[{
+                 RowBox[{"673", " ", 
+                  SuperscriptBox["10", 
+                   RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", "n", "]"}], "]"}]]}], "+", "n"}], 
+                "]"}]}], ",", "\[IndentingNewLine]", 
+              RowBox[{"Print", "[", "n", "]"}], ",", "\[IndentingNewLine]", 
+              "Null"}], "\[IndentingNewLine]", "]"}], ",", "Null"}], 
+           "\[IndentingNewLine]", "]"}], ",", "Null"}], "\[IndentingNewLine]",
+          "]"}], ",", "Null"}], "\[IndentingNewLine]", "]"}]}]}], 
+    "\[IndentingNewLine]", "]"}], ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.6674967341149673`*^9, 3.6674970112273064`*^9}, {
+  3.667497060960106*^9, 3.667497064070095*^9}, {3.6674971005121202`*^9, 
+  3.6674971277873363`*^9}, {3.6674971663574047`*^9, 3.667497167438492*^9}, {
+  3.667497407561858*^9, 3.667497503516096*^9}, {3.667497716985938*^9, 
+  3.6674977326029396`*^9}, {3.667497780874346*^9, 3.6674978084538417`*^9}, {
+  3.667497865096598*^9, 3.667497876338414*^9}, {3.667497943664111*^9, 
+  3.6674979586925564`*^9}, {3.667498116516243*^9, 3.6674981165622883`*^9}, {
+  3.6674982231807623`*^9, 3.6674983611393557`*^9}, {3.6674983946005263`*^9, 
+  3.6674984107680683`*^9}, {3.6674986313060236`*^9, 3.6674986648362527`*^9}, {
+  3.6674987100026584`*^9, 3.6674988577516747`*^9}}],
+
+Cell[BoxData["129976621"], "Print",
+ CellChangeTimes->{3.667498923616972*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Prime", "[", "1000000", "]"}]], "Input",
+ CellChangeTimes->{{3.6674986873909264`*^9, 3.667498692646983*^9}}],
+
+Cell[BoxData["15485863"], "Output",
+ CellChangeTimes->{3.6674986931294413`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PrimeQ", "[", "129976621", "]"}]], "Input",
+ CellChangeTimes->{{3.667498985065028*^9, 3.6674990310252523`*^9}}],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{{3.66749899546403*^9, 3.667499026938274*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"i", "=", "2"}], ";", 
+     RowBox[{"max", "=", "200"}]}], ",", 
+    RowBox[{"i", "<", "max"}], ",", 
+    RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["p", "1"], "=", 
+      RowBox[{"Prime", "[", "i", "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"For", "[", 
+      RowBox[{
+       RowBox[{"j", "=", 
+        RowBox[{"i", "+", "1"}]}], ",", 
+       RowBox[{"j", "<", "max"}], ",", 
+       RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["p", "2"], "=", 
+         RowBox[{"Prime", "[", "j", "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"PrimeQ", "[", 
+            RowBox[{
+             RowBox[{
+              SubscriptBox["p", "1"], " ", 
+              SuperscriptBox["10", 
+               RowBox[{"Ceiling", "[", 
+                RowBox[{"Log10", "[", 
+                 SubscriptBox["p", "2"], "]"}], "]"}]]}], " ", "+", 
+             SubscriptBox["p", "2"]}], "]"}], "&&", 
+           RowBox[{"PrimeQ", "[", 
+            RowBox[{
+             RowBox[{
+              SubscriptBox["p", "2"], " ", 
+              SuperscriptBox["10", 
+               RowBox[{"Ceiling", "[", 
+                RowBox[{"Log10", "[", 
+                 SubscriptBox["p", "1"], "]"}], "]"}]]}], "+", 
+             SubscriptBox["p", "1"]}], "]"}]}], ",", "\[IndentingNewLine]", 
+          RowBox[{"For", "[", 
+           RowBox[{
+            RowBox[{"k", "=", 
+             RowBox[{"j", "+", "1"}]}], ",", 
+            RowBox[{"k", "<", "max"}], ",", 
+            RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{
+              SubscriptBox["p", "3"], "=", 
+              RowBox[{"Prime", "[", "k", "]"}]}], ";", "\[IndentingNewLine]", 
+             RowBox[{"If", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"PrimeQ", "[", 
+                 RowBox[{
+                  RowBox[{
+                   SubscriptBox["p", "1"], " ", 
+                   SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "3"], "]"}], "]"}]]}], " ", "+", 
+                  SubscriptBox["p", "3"]}], "]"}], "&&", 
+                RowBox[{"PrimeQ", "[", 
+                 RowBox[{
+                  RowBox[{
+                   SubscriptBox["p", "3"], " ", 
+                   SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "1"], "]"}], "]"}]]}], "+", 
+                  SubscriptBox["p", "1"]}], "]"}], "&&", 
+                RowBox[{"PrimeQ", "[", 
+                 RowBox[{
+                  RowBox[{
+                   SubscriptBox["p", "2"], " ", 
+                   SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "3"], "]"}], "]"}]]}], " ", "+", 
+                  SubscriptBox["p", "3"]}], "]"}], "&&", 
+                RowBox[{"PrimeQ", "[", 
+                 RowBox[{
+                  RowBox[{
+                   SubscriptBox["p", "3"], " ", 
+                   SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "2"], "]"}], "]"}]]}], "+", 
+                  SubscriptBox["p", "2"]}], "]"}]}], ",", 
+               "\[IndentingNewLine]", 
+               RowBox[{"For", "[", 
+                RowBox[{
+                 RowBox[{"l", "=", 
+                  RowBox[{"k", "+", "1"}]}], ",", 
+                 RowBox[{"l", "<", "max"}], ",", 
+                 RowBox[{"l", "++"}], ",", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{
+                   SubscriptBox["p", "4"], "=", 
+                   RowBox[{"Prime", "[", "l", "]"}]}], ";", 
+                  "\[IndentingNewLine]", 
+                  RowBox[{"If", "[", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "1"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "4"], "]"}], "]"}]]}], " ", "+", 
+                    SubscriptBox["p", "4"]}], "]"}], "&&", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "4"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "1"], "]"}], "]"}]]}], "+", 
+                    SubscriptBox["p", "1"]}], "]"}], "&&", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "2"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "4"], "]"}], "]"}]]}], " ", "+", 
+                    SubscriptBox["p", "4"]}], "]"}], "&&", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "4"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "2"], "]"}], "]"}]]}], "+", 
+                    SubscriptBox["p", "2"]}], "]"}], "&&", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "3"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "4"], "]"}], "]"}]]}], " ", "+", 
+                    SubscriptBox["p", "4"]}], "]"}], "&&", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "4"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "3"], "]"}], "]"}]]}], "+", 
+                    SubscriptBox["p", "3"]}], "]"}]}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"Print", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    SubscriptBox["p", "1"], ",", 
+                    SubscriptBox["p", "2"], ",", 
+                    SubscriptBox["p", "3"], ",", 
+                    SubscriptBox["p", "4"]}], "}"}], "]"}], ",", 
+                    "\[IndentingNewLine]", "Null"}], "\[IndentingNewLine]", 
+                   "]"}]}]}], "\[IndentingNewLine]", "]"}], ",", "Null"}], 
+              "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", "]"}], 
+          ",", "Null"}], "\[IndentingNewLine]", "]"}]}]}], 
+      "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", "]"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.667499618508847*^9, 3.6674997633470545`*^9}, {
+  3.6674998135313034`*^9, 3.6675000070963335`*^9}, {3.6675000553437114`*^9, 
+  3.667500124790447*^9}, {3.6675351637304916`*^9, 3.667535184468424*^9}, {
+  3.667535217552233*^9, 3.667535359718888*^9}, {3.6675353919578476`*^9, 
+  3.6675354701249757`*^9}, {3.6675355380412517`*^9, 3.667535736496001*^9}, {
+  3.6675358861197987`*^9, 3.6675359502123995`*^9}, {3.6675359896102753`*^9, 
+  3.66753599747083*^9}, {3.667536033211172*^9, 3.66753605722326*^9}, {
+  3.6675361021914797`*^9, 3.667536102245532*^9}, {3.6675361359909654`*^9, 
+  3.667536165375208*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"3", ",", "7", ",", "109", ",", "673"}], "}"}]], "Print",
+ CellChangeTimes->{3.6675360606855984`*^9, 3.6675361117076163`*^9, 
+  3.6675361669146776`*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"23", ",", "311", ",", "677", ",", "827"}], "}"}]], "Print",
+ CellChangeTimes->{3.6675360606855984`*^9, 3.6675361117076163`*^9, 
+  3.6675361671669207`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"i", "=", "2"}], ";", 
+     RowBox[{"max", "=", "1600"}]}], ",", 
+    RowBox[{"i", "<", "max"}], ",", 
+    RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["p", "1"], "=", 
+      RowBox[{"Prime", "[", "i", "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"For", "[", 
+      RowBox[{
+       RowBox[{"j", "=", 
+        RowBox[{"i", "+", "1"}]}], ",", 
+       RowBox[{"j", "<", "max"}], ",", 
+       RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["p", "2"], "=", 
+         RowBox[{"Prime", "[", "j", "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"PrimeQ", "[", 
+            RowBox[{
+             RowBox[{
+              SubscriptBox["p", "1"], " ", 
+              SuperscriptBox["10", 
+               RowBox[{"Ceiling", "[", 
+                RowBox[{"Log10", "[", 
+                 SubscriptBox["p", "2"], "]"}], "]"}]]}], " ", "+", 
+             SubscriptBox["p", "2"]}], "]"}], "&&", 
+           RowBox[{"PrimeQ", "[", 
+            RowBox[{
+             RowBox[{
+              SubscriptBox["p", "2"], " ", 
+              SuperscriptBox["10", 
+               RowBox[{"Ceiling", "[", 
+                RowBox[{"Log10", "[", 
+                 SubscriptBox["p", "1"], "]"}], "]"}]]}], "+", 
+             SubscriptBox["p", "1"]}], "]"}]}], ",", "\[IndentingNewLine]", 
+          RowBox[{"For", "[", 
+           RowBox[{
+            RowBox[{"k", "=", 
+             RowBox[{"j", "+", "1"}]}], ",", 
+            RowBox[{"k", "<", "max"}], ",", 
+            RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{
+              SubscriptBox["p", "3"], "=", 
+              RowBox[{"Prime", "[", "k", "]"}]}], ";", "\[IndentingNewLine]", 
+             RowBox[{"If", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"PrimeQ", "[", 
+                 RowBox[{
+                  RowBox[{
+                   SubscriptBox["p", "1"], " ", 
+                   SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "3"], "]"}], "]"}]]}], " ", "+", 
+                  SubscriptBox["p", "3"]}], "]"}], "&&", 
+                RowBox[{"PrimeQ", "[", 
+                 RowBox[{
+                  RowBox[{
+                   SubscriptBox["p", "3"], " ", 
+                   SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "1"], "]"}], "]"}]]}], "+", 
+                  SubscriptBox["p", "1"]}], "]"}], "&&", 
+                RowBox[{"PrimeQ", "[", 
+                 RowBox[{
+                  RowBox[{
+                   SubscriptBox["p", "2"], " ", 
+                   SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "3"], "]"}], "]"}]]}], " ", "+", 
+                  SubscriptBox["p", "3"]}], "]"}], "&&", 
+                RowBox[{"PrimeQ", "[", 
+                 RowBox[{
+                  RowBox[{
+                   SubscriptBox["p", "3"], " ", 
+                   SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "2"], "]"}], "]"}]]}], "+", 
+                  SubscriptBox["p", "2"]}], "]"}]}], ",", 
+               "\[IndentingNewLine]", 
+               RowBox[{"For", "[", 
+                RowBox[{
+                 RowBox[{"l", "=", 
+                  RowBox[{"k", "+", "1"}]}], ",", 
+                 RowBox[{"l", "<", "max"}], ",", 
+                 RowBox[{"l", "++"}], ",", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{
+                   SubscriptBox["p", "4"], "=", 
+                   RowBox[{"Prime", "[", "l", "]"}]}], ";", 
+                  "\[IndentingNewLine]", 
+                  RowBox[{"If", "[", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "1"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "4"], "]"}], "]"}]]}], " ", "+", 
+                    SubscriptBox["p", "4"]}], "]"}], "&&", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "4"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "1"], "]"}], "]"}]]}], "+", 
+                    SubscriptBox["p", "1"]}], "]"}], "&&", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "2"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "4"], "]"}], "]"}]]}], " ", "+", 
+                    SubscriptBox["p", "4"]}], "]"}], "&&", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "4"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "2"], "]"}], "]"}]]}], "+", 
+                    SubscriptBox["p", "2"]}], "]"}], "&&", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "3"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "4"], "]"}], "]"}]]}], " ", "+", 
+                    SubscriptBox["p", "4"]}], "]"}], "&&", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "4"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "3"], "]"}], "]"}]]}], "+", 
+                    SubscriptBox["p", "3"]}], "]"}]}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"For", "[", 
+                    RowBox[{
+                    RowBox[{"m", "=", 
+                    RowBox[{"l", "+", "1"}]}], ",", 
+                    RowBox[{"m", "<", "max"}], ",", 
+                    RowBox[{"m", "++"}], ",", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "5"], "=", 
+                    RowBox[{"Prime", "[", "m", "]"}]}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "1"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "5"], "]"}], "]"}]]}], " ", "+", 
+                    SubscriptBox["p", "5"]}], "]"}], "&&", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "5"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "1"], "]"}], "]"}]]}], "+", 
+                    SubscriptBox["p", "1"]}], "]"}], "&&", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "2"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "5"], "]"}], "]"}]]}], " ", "+", 
+                    SubscriptBox["p", "5"]}], "]"}], "&&", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "5"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "2"], "]"}], "]"}]]}], "+", 
+                    SubscriptBox["p", "2"]}], "]"}], "&&", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "3"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "5"], "]"}], "]"}]]}], " ", "+", 
+                    SubscriptBox["p", "5"]}], "]"}], "&&", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "5"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "3"], "]"}], "]"}]]}], "+", 
+                    SubscriptBox["p", "3"]}], "]"}], "&&", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "4"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "5"], "]"}], "]"}]]}], " ", "+", 
+                    SubscriptBox["p", "5"]}], "]"}], "&&", 
+                    RowBox[{"PrimeQ", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["p", "5"], " ", 
+                    SuperscriptBox["10", 
+                    RowBox[{"Ceiling", "[", 
+                    RowBox[{"Log10", "[", 
+                    SubscriptBox["p", "4"], "]"}], "]"}]]}], "+", 
+                    SubscriptBox["p", "4"]}], "]"}]}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"Print", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    SubscriptBox["p", "1"], ",", 
+                    SubscriptBox["p", "2"], ",", 
+                    SubscriptBox["p", "3"], ",", 
+                    SubscriptBox["p", "4"], ",", 
+                    SubscriptBox["p", "5"]}], "}"}], "]"}], ",", 
+                    "\[IndentingNewLine]", "Null"}], "\[IndentingNewLine]", 
+                    "]"}]}]}], "\[IndentingNewLine]", "]"}], ",", "Null"}], 
+                   "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", 
+                "]"}], ",", "Null"}], "\[IndentingNewLine]", "]"}]}]}], 
+           "\[IndentingNewLine]", "]"}], ",", "Null"}], "\[IndentingNewLine]",
+          "]"}]}]}], "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", 
+   "]"}], ";"}]], "Input",
+ CellChangeTimes->{
+  3.6675358221943693`*^9, {3.6675358522922974`*^9, 3.6675358538507957`*^9}, {
+   3.6675361087417755`*^9, 3.66753610880783*^9}, {3.667536185654699*^9, 
+   3.667536210391464*^9}, {3.667536257631869*^9, 3.6675362581033335`*^9}, {
+   3.667536357619979*^9, 3.6675363576690164`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"13", ",", "5197", ",", "5701", ",", "6733", ",", "8389"}], 
+  "}"}]], "Print",
+ CellChangeTimes->{3.667536378539075*^9}]
+}, Open  ]]
+},
+WindowSize->{761, 886},
+WindowMargins->{{Automatic, 545}, {40, Automatic}},
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (December 10, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3397, 78, 334, "Input"],
+Cell[3980, 102, 77, 1, 23, "Print"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4094, 108, 132, 2, 31, "Input"],
+Cell[4229, 112, 79, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4345, 118, 135, 2, 31, "Input"],
+Cell[4483, 122, 96, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4616, 128, 8089, 185, 607, "Input"],
+Cell[CellGroupData[{
+Cell[12730, 317, 191, 4, 23, "Print"],
+Cell[12924, 323, 194, 4, 23, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13167, 333, 11947, 272, 823, "Input"],
+Cell[25117, 607, 160, 4, 23, "Print"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
