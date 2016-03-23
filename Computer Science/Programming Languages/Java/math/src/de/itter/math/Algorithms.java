@@ -71,9 +71,10 @@ public class Algorithms {
 	public static long[] properDivisors(long n) {
 		LinkedList<Long> divisors = new LinkedList<Long>();
 
-		for (long i = 1; i <= n / 2; i++) {
+		for (long i = 1; i <= Math.sqrt(n); i++) {
 			if (n % i == 0) {
 				divisors.add(i);
+				divisors.add(n / i);
 			}
 		}
 
