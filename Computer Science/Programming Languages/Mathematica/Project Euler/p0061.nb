@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    538777,       9776]
-NotebookOptionsPosition[    537527,       9730]
-NotebookOutlinePosition[    537875,       9745]
-CellTagsIndexPosition[    537832,       9742]
+NotebookDataLength[    539485,       9794]
+NotebookOptionsPosition[    538191,       9747]
+NotebookOutlinePosition[    538539,       9762]
+CellTagsIndexPosition[    538496,       9759]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -4379,7 +4379,7 @@ CPxzgZyH87EEF6CeDyLpY5H0sUj6VyT9K4o+0p5zwr+hhI9R
   FrameTicks->None,
   GridLinesStyle->Directive[
     GrayLevel[0.5, 0.4]],
-  ImageSize->{665., Automatic}]], "Output",
+  ImageSize->{1143., Automatic}]], "Output",
  CellChangeTimes->{{3.667227742140768*^9, 3.667227751034315*^9}, 
    3.667227800774127*^9, 3.6672279401430845`*^9, 3.66722805787723*^9, 
    3.667228598916236*^9, 3.667228662238096*^9, 3.6672287082292995`*^9, 
@@ -9135,7 +9135,20 @@ ImE=
   3.6675529175435967`*^9, 3.6675529405316916`*^9}, {3.667553919171286*^9, 
   3.6675539277465286`*^9}, {3.667554271807214*^9, 3.667554327074332*^9}, {
   3.6675675755290613`*^9, 3.667567591015946*^9}, {3.6675676266381836`*^9, 
-  3.6675676342625113`*^9}}]
+  3.6675676342625113`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Set", "::", "write"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Tag \[NoBreak]\\!\\(\\*RowBox[{\\\"Inherited\\\"}]\\)\
+\[NoBreak] in \[NoBreak]\\!\\(\\*RowBox[{\\\"Inherited\\\", \\\"[\\\", \\\"\\\
+\\\\\"State\\\\\\\"\\\", \\\"]\\\"}]\\)\[NoBreak] is Protected. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/write\\\", \
+ButtonNote -> \\\"Set::write\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.669652260510722*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -9513,8 +9526,9 @@ Cell[BoxData[
                  Evaluator -> Automatic, Method -> "Preemptive"], 
                Alignment -> {Center, Center}, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
               GraphicsBox[
                RasterBox[CompressedData["
 1:eJztXM8rw2EY35CDq3JzmPwBSksk78GkFEVaToSkSHMYK+2gFgckKQo7sFbK
@@ -9542,8 +9556,9 @@ eYL2+Ey9L+i9AO35RVr+klbPSIuH0HNQWvimRU5o/KHOd9Jw276w7v1p54mD
                Directive[
                  GrayLevel[0.5, 0.4]], ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}], 
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}], 
                Method -> {
                 "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
                  Automatic, "DefaultPlotStyle" -> Automatic, "DomainPadding" -> 
@@ -9582,8 +9597,9 @@ eYL2+Ey9L+i9AO35RVr+klbPSIuH0HNQWvimRU5o/KHOd9Jw276w7v1p54mD
                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
                Alignment -> {Center, Center}, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
               GraphicsBox[
                RasterBox[CompressedData["
 1:eJztXM8rw2EY35CDq3JzmPwBSksk78GkFEVaToSkSHMYK+2gFgckKQo7sFbK
@@ -9611,8 +9627,9 @@ eYL2+Ey9L+i9AO35RVr+klbPSIuH0HNQWvimRU5o/KHOd9Jw276w7v1p54mD
                Directive[
                  GrayLevel[0.5, 0.4]], ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}], 
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}], 
                Method -> {
                 "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
                  Automatic, "DefaultPlotStyle" -> Automatic, "DomainPadding" -> 
@@ -9746,37 +9763,38 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 66518, 1159, 2432, "Input"],
-Cell[67101, 1183, 179976, 3208, 562, "Output"]
+Cell[67101, 1183, 179977, 3208, 967, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[247114, 4396, 996, 21, 52, "Input"],
-Cell[248113, 4419, 149339, 2690, 340, "Output"]
+Cell[247115, 4396, 996, 21, 52, "Input"],
+Cell[248114, 4419, 149339, 2690, 340, "Output"]
 }, Open  ]],
-Cell[397467, 7112, 96, 1, 31, "Input"],
+Cell[397468, 7112, 96, 1, 31, "Input"],
 Cell[CellGroupData[{
-Cell[397588, 7117, 753, 18, 31, "Input"],
-Cell[398344, 7137, 111406, 2000, 907, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[509787, 9142, 158, 3, 31, "Input"],
-Cell[509948, 9147, 11538, 232, 75, "Output"]
-}, Open  ]],
-Cell[521501, 9382, 94, 1, 31, "Input"],
-Cell[CellGroupData[{
-Cell[521620, 9387, 662, 15, 31, "Input"],
-Cell[522285, 9404, 2930, 59, 174, "Output"]
+Cell[397589, 7117, 753, 18, 31, "Input"],
+Cell[398345, 7137, 111406, 2000, 907, "Output"],
+Cell[509754, 9139, 572, 11, 21, "Message"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[525252, 9468, 404, 8, 31, "Input"],
-Cell[525659, 9478, 416, 9, 31, "Output"]
+Cell[510363, 9155, 158, 3, 31, "Input"],
+Cell[510524, 9160, 11538, 232, 75, "Output"]
+}, Open  ]],
+Cell[522077, 9395, 94, 1, 31, "Input"],
+Cell[CellGroupData[{
+Cell[522196, 9400, 662, 15, 31, "Input"],
+Cell[522861, 9417, 2930, 59, 174, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[526112, 9492, 158, 3, 31, "Input"],
-Cell[526273, 9497, 10850, 216, 75, "Output"]
+Cell[525828, 9481, 404, 8, 31, "Input"],
+Cell[526235, 9491, 416, 9, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[537160, 9718, 249, 6, 31, "Input"],
-Cell[537412, 9726, 99, 1, 31, "Output"]
+Cell[526688, 9505, 158, 3, 31, "Input"],
+Cell[526849, 9510, 10938, 220, 75, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[537824, 9735, 249, 6, 31, "Input"],
+Cell[538076, 9743, 99, 1, 31, "Output"]
 }, Open  ]]
 }
 ]
