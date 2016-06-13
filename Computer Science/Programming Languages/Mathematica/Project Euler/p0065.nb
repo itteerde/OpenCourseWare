@@ -1,0 +1,64 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1443,         54]
+NotebookOptionsPosition[      1130,         38]
+NotebookOutlinePosition[      1477,         53]
+CellTagsIndexPosition[      1434,         50]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Plus", " ", "@@", 
+  RowBox[{"IntegerDigits", "[", 
+   RowBox[{"Numerator", "[", 
+    RowBox[{
+     RowBox[{"Convergents", "[", 
+      RowBox[{"ContinuedFraction", "[", 
+       RowBox[{"E", ",", "100"}], "]"}], "]"}], "[", 
+     RowBox[{"[", "100", "]"}], "]"}], "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.674809349995751*^9, 3.6748093765661387`*^9}, {
+  3.6748094613121142`*^9, 3.6748095583518343`*^9}}],
+
+Cell[BoxData["272"], "Output",
+ CellChangeTimes->{{3.6748094816565666`*^9, 3.674809558742208*^9}}]
+}, Open  ]]
+},
+WindowSize->{759, 833},
+WindowMargins->{{549, Automatic}, {76, Automatic}},
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (December 10, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 433, 10, 31, "Input"],
+Cell[1016, 34, 98, 1, 64, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
