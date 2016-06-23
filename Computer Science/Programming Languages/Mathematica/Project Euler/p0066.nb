@@ -1,0 +1,125 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3235,        116]
+NotebookOptionsPosition[      2598,         89]
+NotebookOutlinePosition[      2946,        104]
+CellTagsIndexPosition[      2903,        101]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["32080051", "2"], "-", 
+  RowBox[{"106", " ", 
+   SuperscriptBox["3115890", "2"]}]}]], "Input",
+ CellChangeTimes->{{3.6748349251361313`*^9, 3.6748349621314807`*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.6748349626880283`*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", 
+    RowBox[{"x_", ",", "y_", ",", "d_"}], "]"}], ":=", 
+   RowBox[{
+    SuperscriptBox["x", "2"], "-", 
+    RowBox[{"d", " ", 
+     SuperscriptBox["y", "2"]}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"cfe", ":=", 
+   RowBox[{"Convergents", "[", 
+    RowBox[{
+     RowBox[{"ContinuedFraction", "[", 
+      SqrtBox["13"], "]"}], ",", "10"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.674843611460334*^9, 3.6748437072948875`*^9}, {
+  3.6748437679278345`*^9, 3.674843779889278*^9}, {3.6748438193149242`*^9, 
+  3.674843837703492*^9}, {3.674843879022973*^9, 3.674843930632286*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f", "[", 
+  RowBox[{"649", ",", "180", ",", "13"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6748439345040016`*^9, 3.674843963094304*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.6748439539936237`*^9, 3.674843963539729*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["cfe"], "Input",
+ CellChangeTimes->{{3.6748439993699646`*^9, 3.674844000207768*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"3", ",", "4", ",", 
+   FractionBox["7", "2"], ",", 
+   FractionBox["11", "3"], ",", 
+   FractionBox["18", "5"], ",", 
+   FractionBox["119", "33"], ",", 
+   FractionBox["137", "38"], ",", 
+   FractionBox["256", "71"], ",", 
+   FractionBox["393", "109"], ",", 
+   FractionBox["649", "180"]}], "}"}]], "Output",
+ CellChangeTimes->{3.6748440009654903`*^9}]
+}, Open  ]],
+
+Cell[BoxData["@@"], "Input",
+ CellChangeTimes->{{3.6748440236691923`*^9, 3.6748440238013105`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "Map"}]], "Input",
+ CellChangeTimes->{{3.6748440785236073`*^9, 3.6748440801321497`*^9}}]
+},
+WindowSize->{759, 833},
+WindowMargins->{{Automatic, 355}, {114, Automatic}},
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (December 10, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 206, 5, 31, "Input"],
+Cell[789, 29, 72, 1, 31, "Output"]
+}, Open  ]],
+Cell[876, 33, 655, 17, 59, "Input"],
+Cell[CellGroupData[{
+Cell[1556, 54, 160, 3, 31, "Input"],
+Cell[1719, 59, 96, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1852, 65, 97, 1, 31, "Input"],
+Cell[1952, 68, 392, 11, 46, "Output"]
+}, Open  ]],
+Cell[2359, 82, 98, 1, 31, "Input"],
+Cell[2460, 85, 134, 2, 52, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)

@@ -1,0 +1,138 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3756,        129]
+NotebookOptionsPosition[      3220,        106]
+NotebookOutlinePosition[      3567,        121]
+CellTagsIndexPosition[      3524,        118]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"l", "[", 
+    RowBox[{"a_", ",", "b_", ",", "c_"}], "]"}], ":=", 
+   RowBox[{"Min", "[", 
+    RowBox[{
+     SqrtBox[
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"c", "+", "b"}], ")"}], "2"], "+", 
+       SuperscriptBox["a", "2"]}]], ",", 
+     SqrtBox[
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"c", "+", "a"}], ")"}], "2"], "+", 
+       SuperscriptBox["b", "2"]}]], ",", 
+     SqrtBox[
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"a", "+", "b"}], ")"}], "2"], "+", 
+       SuperscriptBox["c", "2"]}]]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6750136937637987`*^9, 3.6750137772455645`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"IntegerQ", "[", 
+  RowBox[{"l", "[", 
+   RowBox[{"1", ",", "2", ",", "4"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6750137806658335`*^9, 3.675013783762807*^9}, {
+  3.675014070631895*^9, 3.675014097621684*^9}}],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{
+  3.6750137841261396`*^9, 3.6750140096716514`*^9, {3.6750140838415365`*^9, 
+   3.6750140979190183`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"counter", " ", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"m", "=", "100"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.675013802701888*^9, 3.675013912407728*^9}}],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "1"}], ",", 
+   RowBox[{"i", "\[LessEqual]", "m"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"For", "[", 
+    RowBox[{
+     RowBox[{"j", "=", "i"}], ",", 
+     RowBox[{"j", "\[LessEqual]", "m"}], ",", 
+     RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"For", "[", 
+      RowBox[{
+       RowBox[{"k", "=", "j"}], ",", 
+       RowBox[{"k", "\[LessEqual]", "m"}], ",", 
+       RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"IntegerQ", "[", 
+          RowBox[{"l", "[", 
+           RowBox[{"i", ",", "j", ",", "k"}], "]"}], "]"}], ",", 
+         RowBox[{"counter", "=", 
+          RowBox[{"counter", "+", "1"}]}]}], "]"}]}], "\[IndentingNewLine]", 
+      "]"}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.6750138868142576`*^9, 3.6750140024697666`*^9}, 
+   3.6750141205916386`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["counter"], "Input",
+ CellChangeTimes->{{3.6750140159956903`*^9, 3.6750140177273455`*^9}}],
+
+Cell[BoxData["2060"], "Output",
+ CellChangeTimes->{3.6750140181317425`*^9, 3.675014134747157*^9}]
+}, Open  ]]
+},
+WindowSize->{759, 833},
+WindowMargins->{{Automatic, 254}, {56, Automatic}},
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (December 10, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 748, 25, 45, "Input"],
+Cell[CellGroupData[{
+Cell[1331, 49, 240, 5, 31, "Input"],
+Cell[1574, 56, 156, 3, 31, "Output"]
+}, Open  ]],
+Cell[1745, 62, 216, 5, 52, "Input"],
+Cell[1964, 69, 1012, 26, 152, "Input"],
+Cell[CellGroupData[{
+Cell[3001, 99, 103, 1, 31, "Input"],
+Cell[3107, 102, 97, 1, 88, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

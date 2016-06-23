@@ -1,0 +1,76 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1976,         67]
+NotebookOptionsPosition[      1625,         50]
+NotebookOutlinePosition[      1973,         65]
+CellTagsIndexPosition[      1930,         62]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"n", "=", "1"}], "100"], 
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"IntegerQ", "[", 
+     SqrtBox["n"], "]"}], ",", "0", ",", 
+    RowBox[{"Total", "[", 
+     RowBox[{
+      RowBox[{"RealDigits", "[", 
+       RowBox[{
+        SqrtBox["n"], ",", "10", ",", "100"}], "]"}], "\[LeftDoubleBracket]", 
+      "1", "\[RightDoubleBracket]"}], "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.674994550665227*^9, 3.6749945715982237`*^9}, {
+  3.6749946259071064`*^9, 3.674994630908889*^9}, {3.674994675163186*^9, 
+  3.6749947712399836`*^9}, {3.674994914621973*^9, 3.674995024067548*^9}, {
+  3.6749951308175573`*^9, 3.674995140765052*^9}}],
+
+Cell[BoxData["40886"], "Output",
+ CellChangeTimes->{{3.6749945573516016`*^9, 3.674994572188779*^9}, {
+   3.6749946847833757`*^9, 3.674994723998844*^9}, 3.674994773667303*^9, {
+   3.6749949544640546`*^9, 3.6749950246421022`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6749948719882483`*^9, 3.674994902090002*^9}}]
+},
+WindowSize->{759, 833},
+WindowMargins->{{Automatic, 572}, {124, Automatic}},
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (December 10, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 701, 17, 57, "Input"],
+Cell[1284, 41, 228, 3, 31, "Output"]
+}, Open  ]],
+Cell[1527, 47, 94, 1, 31, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
