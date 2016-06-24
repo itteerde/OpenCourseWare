@@ -1,0 +1,147 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4225,        138]
+NotebookOptionsPosition[      3831,        120]
+NotebookOutlinePosition[      4179,        135]
+CellTagsIndexPosition[      4136,        132]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"test", "[", "n_", "]"}], ":=", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"PrimeQ", "[", 
+       RowBox[{
+        SuperscriptBox["n", "2"], "+", "1"}], "]"}], " ", "&&", " ", 
+      RowBox[{"PrimeQ", "[", 
+       RowBox[{
+        SuperscriptBox["n", "2"], "+", "3"}], "]"}], "&&", 
+      RowBox[{"PrimeQ", "[", 
+       RowBox[{
+        SuperscriptBox["n", "2"], "+", "7"}], "]"}], "&&", 
+      RowBox[{"PrimeQ", "[", 
+       RowBox[{
+        SuperscriptBox["n", "2"], "+", "9"}], "]"}], "&&", 
+      RowBox[{"PrimeQ", "[", 
+       RowBox[{
+        SuperscriptBox["n", "2"], "+", "13"}], "]"}], "&&", 
+      RowBox[{"PrimeQ", "[", 
+       RowBox[{
+        SuperscriptBox["n", "2"], "+", "27"}], "]"}], "&&", 
+      RowBox[{
+       RowBox[{"PrimeQ", "[", 
+        RowBox[{
+         SuperscriptBox["n", "2"], "+", "5"}], "]"}], "\[Equal]", "False"}], "&&", 
+      RowBox[{
+       RowBox[{"PrimeQ", "[", 
+        RowBox[{
+         SuperscriptBox["n", "2"], "+", "11"}], "]"}], "\[Equal]", "False"}], 
+      "&&", 
+      RowBox[{
+       RowBox[{"PrimeQ", "[", 
+        RowBox[{
+         SuperscriptBox["n", "2"], "+", "15"}], "]"}], "\[Equal]", "False"}], 
+      "&&", 
+      RowBox[{
+       RowBox[{"PrimeQ", "[", 
+        RowBox[{
+         SuperscriptBox["n", "2"], "+", "17"}], "]"}], "\[Equal]", "False"}], 
+      "&&", 
+      RowBox[{
+       RowBox[{"PrimeQ", "[", 
+        RowBox[{
+         SuperscriptBox["n", "2"], "+", "19"}], "]"}], "\[Equal]", "False"}], 
+      "&&", 
+      RowBox[{
+       RowBox[{"PrimeQ", "[", 
+        RowBox[{
+         SuperscriptBox["n", "2"], "+", "21"}], "]"}], "\[Equal]", "False"}], 
+      "&&", 
+      RowBox[{
+       RowBox[{"PrimeQ", "[", 
+        RowBox[{
+         SuperscriptBox["n", "2"], "+", "23"}], "]"}], "\[Equal]", "False"}], 
+      "&&", 
+      RowBox[{
+       RowBox[{"PrimeQ", "[", 
+        RowBox[{
+         SuperscriptBox["n", "2"], "+", "25"}], "]"}], "\[Equal]", 
+       "False"}]}], ",", "True", ",", "False"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6757960485932913`*^9, 3.6757961587860527`*^9}, {
+  3.675796527278739*^9, 3.6757966149588985`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"sum", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"n", "=", "1"}], ",", 
+    RowBox[{"n", "<", " ", "150000000"}], ",", 
+    RowBox[{"n", "++"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"test", "[", "n", "]"}], ",", 
+      RowBox[{
+       RowBox[{"sum", "=", 
+        RowBox[{"sum", "+", "n"}]}], ";"}], ",", "Nothing"}], "]"}]}], "]"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.6757961606758666`*^9, 3.6757963511106453`*^9}, {
+  3.6757963964912148`*^9, 3.675796420425183*^9}, {3.675796620817523*^9, 
+  3.6757966551805058`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["sum"], "Input",
+ CellChangeTimes->{{3.6757963251827583`*^9, 3.675796325981525*^9}, {
+  3.6757963583786306`*^9, 3.6757963586418867`*^9}}],
+
+Cell[BoxData["676333270"], "Output",
+ CellChangeTimes->{
+  3.6757963265060315`*^9, 3.6757963590672827`*^9, {3.675796399182787*^9, 
+   3.6757964216953955`*^9}, {3.675796630903203*^9, 3.675796645321042*^9}, 
+   3.6757976806638217`*^9}]
+}, Open  ]]
+},
+WindowSize->{759, 833},
+WindowMargins->{{Automatic, 572}, {124, Automatic}},
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (December 10, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2180, 65, 142, "Input"],
+Cell[2741, 87, 663, 18, 72, "Input"],
+Cell[CellGroupData[{
+Cell[3429, 109, 150, 2, 31, "Input"],
+Cell[3582, 113, 233, 4, 31, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
