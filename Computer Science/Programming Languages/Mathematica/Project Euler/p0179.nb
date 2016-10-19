@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      1913,         66]
-NotebookOptionsPosition[      1597,         50]
-NotebookOutlinePosition[      1945,         65]
-CellTagsIndexPosition[      1902,         62]
+NotebookDataLength[      1990,         69]
+NotebookOptionsPosition[      1674,         53]
+NotebookOutlinePosition[      2022,         68]
+CellTagsIndexPosition[      1979,         65]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -44,8 +44,11 @@ Cell[BoxData[
  CellChangeTimes->{{3.685866320842655*^9, 3.685866680674513*^9}, {
   3.685866772395666*^9, 3.685866772477744*^9}}],
 
-Cell[BoxData["$Aborted"], "Output",
- CellChangeTimes->{3.6858666641246033`*^9, 3.685866768222662*^9}]
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"93.078125`", ",", "986262"}], "}"}]], "Output",
+ CellChangeTimes->{3.6858666641246033`*^9, 3.685866768222662*^9, 
+  3.685866869661138*^9}]
 }, Open  ]]
 },
 WindowSize->{759, 833},
@@ -66,7 +69,7 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 897, 22, 155, "Input"],
-Cell[1480, 46, 101, 1, 30, "Output"]
+Cell[1480, 46, 178, 4, 63, "Output"]
 }, Open  ]]
 }
 ]
