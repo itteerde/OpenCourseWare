@@ -1,0 +1,85 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2122,         77]
+NotebookOptionsPosition[      1626,         55]
+NotebookOutlinePosition[      1976,         70]
+CellTagsIndexPosition[      1933,         67]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.685706790750486*^9, 3.6857068043915963`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Divisors", "[", "1777", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Divisors", "[", "1855", "]"}]}], "Input",
+ CellChangeTimes->{{3.6857070177605133`*^9, 3.685707066254077*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "1777"}], "}"}]], "Output",
+ CellChangeTimes->{{3.685707023467987*^9, 3.6857070666144304`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "5", ",", "7", ",", "35", ",", "53", ",", "265", ",", "371", ",", 
+   "1855"}], "}"}]], "Output",
+ CellChangeTimes->{{3.685707023467987*^9, 3.685707066617427*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Prime", "[", "3001135", "]"}]], "Input",
+ CellChangeTimes->{{3.685710858008519*^9, 3.685710884890339*^9}, {
+  3.685710944686752*^9, 3.68571103161124*^9}}],
+
+Cell[BoxData["50000017"], "Output",
+ CellChangeTimes->{{3.685710861813176*^9, 3.6857108853207536`*^9}, {
+  3.68571094554659*^9, 3.685711032020635*^9}}]
+}, Open  ]]
+},
+WindowSize->{759, 833},
+WindowMargins->{{517, Automatic}, {-431, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 94, 1, 30, "Input"],
+Cell[CellGroupData[{
+Cell[677, 25, 199, 3, 50, "Input"],
+Cell[879, 30, 144, 3, 30, "Output"],
+Cell[1026, 35, 215, 5, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1278, 45, 178, 3, 30, "Input"],
+Cell[1459, 50, 151, 2, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+

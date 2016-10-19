@@ -1,0 +1,350 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10516,        341]
+NotebookOptionsPosition[      8885,        277]
+NotebookOutlinePosition[      9232,        292]
+CellTagsIndexPosition[      9189,        289]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["10", "18"], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"18", ",", "4"}], "]"}], "10"}], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"18", ",", "5"}], "]"}], "10"}], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"18", ",", "6"}], "]"}], "10"}], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"18", ",", "7"}], "]"}], "10"}], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"18", ",", "8"}], "]"}], "10"}], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"18", ",", "9"}], "]"}], "10"}], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"18", ",", "10"}], "]"}], "10"}], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"18", ",", "11"}], "]"}], "10"}], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"18", ",", "12"}], "]"}], "10"}], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"18", ",", "13"}], "]"}], "10"}], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"18", ",", "14"}], "]"}], "10"}], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"18", ",", "15"}], "]"}], "10"}], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"18", ",", "16"}], "]"}], "10"}], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"18", ",", "17"}], "]"}], "10"}], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"18", ",", "18"}], "]"}], "10"}], "+", "1"}]], "Input",
+ CellChangeTimes->{{3.6773487652469273`*^9, 3.677348837650421*^9}, {
+  3.6773488746068945`*^9, 3.677348874674966*^9}, {3.6773491030822067`*^9, 
+  3.6773491056366453`*^9}, {3.677349182230173*^9, 3.6773491831460433`*^9}, {
+  3.6773503292030816`*^9, 3.677350334792446*^9}, {3.6773505124579797`*^9, 
+  3.677350618363641*^9}, {3.677350663704151*^9, 3.677350680153941*^9}, {
+  3.6773507611987324`*^9, 3.677350761251791*^9}, {3.6773508494754734`*^9, 
+  3.677350913239683*^9}, {3.677350965759102*^9, 3.6773509826683083`*^9}, {
+  3.6773519102726655`*^9, 3.677351912364682*^9}}],
+
+Cell[BoxData["999999999997388441"], "Output",
+ CellChangeTimes->{
+  3.6773488402989783`*^9, 3.677348875487749*^9, 3.6773491842791395`*^9, 
+   3.6773506814672155`*^9, 3.6773507621386833`*^9, 3.6773509138382564`*^9, {
+   3.677350967302559*^9, 3.6773509837143364`*^9}, 3.6773519131634593`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "10", " ", "10", " ", "10", " ", "9", " ", "9", " ", "9", " ", "8", " ", 
+   "8", " ", "8", " ", "7", " ", "7", " ", "7", " ", "6", " ", "6", " ", "6", 
+   " ", "5", " ", "5", " ", "5"}], " ", "-", 
+  RowBox[{
+  "10", " ", "10", " ", "9", " ", "9", " ", "9", " ", "8", " ", "8", " ", "8",
+    " ", "7", " ", "7", " ", "7", " ", "6", " ", "6", " ", "6", " ", "5", " ",
+    "5", " ", "5"}]}]], "Input",
+ CellChangeTimes->{{3.6773493100698824`*^9, 3.6773493534495153`*^9}, {
+  3.6773493919364586`*^9, 3.6773494293483596`*^9}, {3.677349812466109*^9, 
+  3.6773498150375614`*^9}, {3.6773498774664845`*^9, 3.677349927059086*^9}, {
+  3.6773499581719666`*^9, 3.6773500001202145`*^9}, {3.6773500764815073`*^9, 
+  3.6773501097664614`*^9}}],
+
+Cell[BoxData["3110984755200000"], "Output",
+ CellChangeTimes->{3.6773493548959084`*^9, 3.6773494304323993`*^9, 
+  3.6773499284744434`*^9, 3.677350001296342*^9, 3.6773501116492634`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"10", " ", "10", " ", "9"}]], "Input",
+ CellChangeTimes->{{3.6773501616812983`*^9, 3.677350167791155*^9}}],
+
+Cell[BoxData["900"], "Output",
+ CellChangeTimes->{3.677350187712288*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["10", "3"], "-", "10", "+", "1"}]], "Input",
+ CellChangeTimes->{{3.6773502843680563`*^9, 3.6773503130726137`*^9}}],
+
+Cell[BoxData["991"], "Output",
+ CellChangeTimes->{3.6773503141857185`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Binomial", "[", 
+  RowBox[{"10", ",", "5"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6773504343740306`*^9, 3.677350452798723*^9}, {
+  3.6773504950022244`*^9, 3.677350504804635*^9}}],
+
+Cell[BoxData[
+ FormBox["252", TraditionalForm]], "Output",
+ CellChangeTimes->{{3.6773504467128844`*^9, 3.677350453309218*^9}, 
+   3.677350497928032*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"3", "+", "3", "+", "3", "+", "3", "+", "3", "+", "3"}]], "Input",
+ CellChangeTimes->{{3.677351094819968*^9, 3.677351111617079*^9}, {
+  3.6773512648462067`*^9, 3.677351275125035*^9}}],
+
+Cell[BoxData["18"], "Output",
+ CellChangeTimes->{{3.677351272221285*^9, 3.6773512758016806`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"3", "+", "3", "+", "3", "+", "3", "+", "3", "+", "2", "+", 
+  "1"}]], "Input",
+ CellChangeTimes->{{3.6773512799506674`*^9, 3.677351296072139*^9}}],
+
+Cell[BoxData["18"], "Output",
+ CellChangeTimes->{3.6773512973243456`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["10", "4"], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"4", ",", "3"}], "]"}], "10"}], "+", "1"}]], "Input",
+ CellChangeTimes->{{3.6773517068373995`*^9, 3.677351724312172*^9}, {
+  3.6773517815541167`*^9, 3.6773518028665724`*^9}}],
+
+Cell[BoxData["9961"], "Output",
+ CellChangeTimes->{
+  3.6773517251219516`*^9, {3.677351786433811*^9, 3.6773518050787086`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["10", "18"], "-", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"18", ",", "3"}], "]"}], 
+   SuperscriptBox["10", "15"]}], "+", "1"}]], "Input",
+ CellChangeTimes->{{3.6773520809805307`*^9, 3.677352088728963*^9}, {
+  3.6773521814419575`*^9, 3.6773521831415825`*^9}, {3.677352226513245*^9, 
+  3.677352262879114*^9}, {3.6773523383275323`*^9, 3.677352339442608*^9}}],
+
+Cell[BoxData["184000000000000001"], "Output",
+ CellChangeTimes->{3.6773522639431515`*^9, 3.677352340130271*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["10", "18"], "-", 
+  SuperscriptBox["10", "17"], "-", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"9", 
+      RowBox[{
+       UnderoverscriptBox["\[Sum]", 
+        RowBox[{"m", "=", "4"}], "18"], 
+       RowBox[{"Binomial", "[", 
+        RowBox[{"18", ",", "m"}], "]"}]}]}], ")"}], "+", 
+    RowBox[{
+     UnderoverscriptBox["\[Sum]", 
+      RowBox[{"m", "=", "3"}], "17"], 
+     RowBox[{"Binomial", "[", 
+      RowBox[{"17", ",", "m"}], "]"}]}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.677352394131096*^9, 3.6773523994071755`*^9}, {
+  3.6773524324598846`*^9, 3.6773525090904484`*^9}, {3.6773525392674046`*^9, 
+  3.677352553065648*^9}, {3.6773528670480347`*^9, 3.677352872100873*^9}, {
+  3.6773529039364305`*^9, 3.677352948006731*^9}, {3.6773530277843065`*^9, 
+  3.677353072486215*^9}, {3.6773535902492065`*^9, 3.6773536276651087`*^9}, {
+  3.6773536677325697`*^9, 3.6773536691239038`*^9}}],
+
+Cell[BoxData["899999999997518678"], "Output",
+ CellChangeTimes->{
+  3.6773524000177464`*^9, 3.6773524329833994`*^9, 3.677352466108205*^9, {
+   3.6773525004411488`*^9, 3.6773525096289673`*^9}, {3.677352539889001*^9, 
+   3.6773525536512237`*^9}, 3.6773528732690086`*^9, 3.6773530748574996`*^9, 
+   3.6773536698746166`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["10", "3"], "-", 
+  SuperscriptBox["10", "2"]}]], "Input",
+ CellChangeTimes->{{3.677353633546754*^9, 3.6773536427305593`*^9}}],
+
+Cell[BoxData["900"], "Output",
+ CellChangeTimes->{3.6773536432790995`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"999", "-", "99"}]], "Input",
+ CellChangeTimes->{{3.6773537433401423`*^9, 3.677353746858513*^9}}],
+
+Cell[BoxData["900"], "Output",
+ CellChangeTimes->{3.6773537474781156`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Quantity", "[", 
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      FractionBox["2", "100"], "0.4"}], "4"], ",", "\"\<Liters\>\""}], "]"}], 
+  " "}]], "Input",
+ CellChangeTimes->{{3.6773591658699255`*^9, 3.6773592912692933`*^9}, {
+  3.6773593639600616`*^9, 3.6773593846799493`*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{"0.002`","\"L\"","liters","\"Liters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{{3.6773592220528646`*^9, 3.677359236056305*^9}, {
+  3.677359270270134*^9, 3.6773592915555644`*^9}, {3.6773593683893137`*^9, 
+  3.6773593850423098`*^9}}]
+}, Open  ]]
+},
+WindowSize->{759, 833},
+WindowMargins->{{529, Automatic}, {59, Automatic}},
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (December 10, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2018, 55, 112, "Input"],
+Cell[2601, 79, 290, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2928, 88, 765, 14, 52, "Input"],
+Cell[3696, 104, 184, 2, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3917, 111, 129, 2, 31, "Input"],
+Cell[4049, 115, 72, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4158, 121, 155, 3, 31, "Input"],
+Cell[4316, 126, 74, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4427, 132, 204, 4, 31, "Input"],
+Cell[4634, 138, 152, 3, 44, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4823, 146, 206, 3, 31, "Input"],
+Cell[5032, 151, 97, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5166, 157, 170, 3, 31, "Input"],
+Cell[5339, 162, 73, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5449, 168, 285, 7, 31, "Input"],
+Cell[5737, 177, 126, 2, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5900, 184, 410, 9, 31, "Input"],
+Cell[6313, 195, 111, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6461, 201, 949, 23, 57, "Input"],
+Cell[7413, 226, 320, 5, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7770, 236, 167, 4, 31, "Input"],
+Cell[7940, 242, 74, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8051, 248, 120, 2, 31, "Input"],
+Cell[8174, 252, 74, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8285, 258, 315, 9, 54, "Input"],
+Cell[8603, 269, 266, 5, 71, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
