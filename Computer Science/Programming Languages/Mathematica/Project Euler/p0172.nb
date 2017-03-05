@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10516,        341]
-NotebookOptionsPosition[      8885,        277]
-NotebookOutlinePosition[      9232,        292]
-CellTagsIndexPosition[      9189,        289]
+NotebookDataLength[      9165,        290]
+NotebookOptionsPosition[      7823,        237]
+NotebookOutlinePosition[      8173,        252]
+CellTagsIndexPosition[      8130,        249]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -232,52 +232,12 @@ Cell[BoxData["899999999997518678"], "Output",
    3.6773536698746166`*^9}]
 }, Open  ]],
 
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{
-  SuperscriptBox["10", "3"], "-", 
-  SuperscriptBox["10", "2"]}]], "Input",
- CellChangeTimes->{{3.677353633546754*^9, 3.6773536427305593`*^9}}],
-
-Cell[BoxData["900"], "Output",
- CellChangeTimes->{3.6773536432790995`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"999", "-", "99"}]], "Input",
- CellChangeTimes->{{3.6773537433401423`*^9, 3.677353746858513*^9}}],
-
-Cell[BoxData["900"], "Output",
- CellChangeTimes->{3.6773537474781156`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"Quantity", "[", 
-   RowBox[{
-    FractionBox[
-     RowBox[{
-      FractionBox["2", "100"], "0.4"}], "4"], ",", "\"\<Liters\>\""}], "]"}], 
-  " "}]], "Input",
- CellChangeTimes->{{3.6773591658699255`*^9, 3.6773592912692933`*^9}, {
-  3.6773593639600616`*^9, 3.6773593846799493`*^9}}],
-
-Cell[BoxData[
- TemplateBox[{"0.002`","\"L\"","liters","\"Liters\""},
-  "Quantity"]], "Output",
- CellChangeTimes->{{3.6773592220528646`*^9, 3.677359236056305*^9}, {
-  3.677359270270134*^9, 3.6773592915555644`*^9}, {3.6773593683893137`*^9, 
-  3.6773593850423098`*^9}}]
-}, Open  ]]
+Cell[BoxData["9"], "Input",
+ CellChangeTimes->{3.6869547638804607`*^9}]
 },
 WindowSize->{759, 833},
-WindowMargins->{{529, Automatic}, {59, Automatic}},
-FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (December 10, 2015)",
+WindowMargins->{{436, Automatic}, {-416, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -292,59 +252,47 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 2018, 55, 112, "Input"],
-Cell[2601, 79, 290, 4, 31, "Output"]
+Cell[580, 22, 2018, 55, 88, "Input"],
+Cell[2601, 79, 290, 4, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2928, 88, 765, 14, 52, "Input"],
-Cell[3696, 104, 184, 2, 31, "Output"]
+Cell[2928, 88, 765, 14, 50, "Input"],
+Cell[3696, 104, 184, 2, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3917, 111, 129, 2, 31, "Input"],
-Cell[4049, 115, 72, 1, 31, "Output"]
+Cell[3917, 111, 129, 2, 30, "Input"],
+Cell[4049, 115, 72, 1, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4158, 121, 155, 3, 31, "Input"],
-Cell[4316, 126, 74, 1, 31, "Output"]
+Cell[4158, 121, 155, 3, 30, "Input"],
+Cell[4316, 126, 74, 1, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4427, 132, 204, 4, 31, "Input"],
-Cell[4634, 138, 152, 3, 44, "Output"]
+Cell[4427, 132, 204, 4, 30, "Input"],
+Cell[4634, 138, 152, 3, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4823, 146, 206, 3, 31, "Input"],
-Cell[5032, 151, 97, 1, 31, "Output"]
+Cell[4823, 146, 206, 3, 30, "Input"],
+Cell[5032, 151, 97, 1, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5166, 157, 170, 3, 31, "Input"],
-Cell[5339, 162, 73, 1, 31, "Output"]
+Cell[5166, 157, 170, 3, 30, "Input"],
+Cell[5339, 162, 73, 1, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5449, 168, 285, 7, 31, "Input"],
-Cell[5737, 177, 126, 2, 31, "Output"]
+Cell[5449, 168, 285, 7, 30, "Input"],
+Cell[5737, 177, 126, 2, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5900, 184, 410, 9, 31, "Input"],
-Cell[6313, 195, 111, 1, 31, "Output"]
+Cell[5900, 184, 410, 9, 30, "Input"],
+Cell[6313, 195, 111, 1, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6461, 201, 949, 23, 57, "Input"],
-Cell[7413, 226, 320, 5, 31, "Output"]
+Cell[6461, 201, 949, 23, 58, "Input"],
+Cell[7413, 226, 320, 5, 30, "Output"]
 }, Open  ]],
-Cell[CellGroupData[{
-Cell[7770, 236, 167, 4, 31, "Input"],
-Cell[7940, 242, 74, 1, 31, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[8051, 248, 120, 2, 31, "Input"],
-Cell[8174, 252, 74, 1, 31, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[8285, 258, 315, 9, 54, "Input"],
-Cell[8603, 269, 266, 5, 71, "Output"]
-}, Open  ]]
+Cell[7748, 234, 71, 1, 30, "Input"]
 }
 ]
 *)
 
-(* End of internal cache information *)
