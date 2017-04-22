@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      1298,         53]
-NotebookOptionsPosition[       988,         37]
-NotebookOutlinePosition[      1334,         52]
-CellTagsIndexPosition[      1291,         49]
+NotebookDataLength[      1460,         57]
+NotebookOptionsPosition[      1147,         41]
+NotebookOutlinePosition[      1494,         56]
+CellTagsIndexPosition[      1451,         53]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,22 +22,26 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{
-  UnderoverscriptBox["\[Sum]", 
-   RowBox[{"i", "=", "2"}], "1999999"], 
-  RowBox[{"(", 
-   RowBox[{"If", "[", 
-    RowBox[{
-     RowBox[{"PrimeQ", "[", "i", "]"}], ",", "i", ",", "0"}], "]"}], 
-   ")"}]}]], "Input",
- CellChangeTimes->{{3.6258601747505093`*^9, 3.625860237761033*^9}}],
+  RowBox[{
+   UnderoverscriptBox["\[Sum]", 
+    RowBox[{"i", "=", "2"}], "1999999"], 
+   RowBox[{"(", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"PrimeQ", "[", "i", "]"}], ",", "i", ",", "0"}], "]"}], ")"}]}],
+   "//", "Timing"}]], "Input",
+ CellChangeTimes->{{3.6258601747505093`*^9, 3.625860237761033*^9}, {
+  3.70137136303531*^9, 3.7013713649310875`*^9}}],
 
-Cell[BoxData["142913828922"], "Output",
- CellChangeTimes->{3.625860241100439*^9}]
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1.171875`", ",", "142913828922"}], "}"}]], "Output",
+ CellChangeTimes->{3.625860241100439*^9, 3.701371366736482*^9}]
 }, Open  ]]
 },
 WindowSize->{767, 738},
 WindowMargins->{{Automatic, 283}, {4, Automatic}},
-FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -52,12 +56,10 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 308, 9, 57, "Input"],
-Cell[891, 33, 81, 1, 64, "Output"]
+Cell[580, 22, 392, 11, 58, "Input"],
+Cell[975, 35, 156, 3, 63, "Output"]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 

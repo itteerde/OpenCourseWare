@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 10.0' *)
+(* CreatedBy='Mathematica 11.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      1291,         50]
-NotebookOptionsPosition[       978,         34]
-NotebookOutlinePosition[      1326,         49]
-CellTagsIndexPosition[      1283,         46]
+NotebookDataLength[      1286,         51]
+NotebookOptionsPosition[       974,         35]
+NotebookOutlinePosition[      1321,         50]
+CellTagsIndexPosition[      1278,         47]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,19 +21,20 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell[BoxData[
- RowBox[{"Max", "[", 
-  RowBox[{"Flatten", "[", 
-   RowBox[{"FactorInteger", "[", "600851475143", "]"}], "]"}], "]"}]], "Input",
- CellChangeTimes->{{3.6258539186461205`*^9, 3.625853964475816*^9}, {
-  3.701348456251668*^9, 3.7013484628531823`*^9}}],
+ RowBox[{"LCM", " ", "@@", 
+  RowBox[{"Table", "[", 
+   RowBox[{"n", ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "2", ",", "20"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7013651327541103`*^9, 3.701365225633363*^9}}],
 
-Cell[BoxData["6857"], "Output",
- CellChangeTimes->{3.625853935348564*^9, 3.625853965926618*^9, 
-  3.7013484635113*^9}]
+Cell[BoxData["232792560"], "Output",
+ CellChangeTimes->{{3.7013651477089176`*^9, 3.701365160520686*^9}, 
+   3.7013652264475007`*^9}]
 }, Open  ]]
 },
 WindowSize->{767, 738},
-WindowMargins->{{Automatic, 383}, {-8, Automatic}},
+WindowMargins->{{Automatic, 333}, {Automatic, 0}},
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -49,8 +50,8 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 261, 5, 30, "Input"],
-Cell[844, 29, 118, 2, 30, "Output"]
+Cell[580, 22, 243, 6, 30, "Input"],
+Cell[826, 30, 132, 2, 30, "Output"]
 }, Open  ]]
 }
 ]
