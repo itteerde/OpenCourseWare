@@ -1,0 +1,612 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     23094,        604]
+NotebookOptionsPosition[     22246,        570]
+NotebookOutlinePosition[     22595,        585]
+CellTagsIndexPosition[     22552,        582]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"mOfn", "[", "n_", "]"}], ":=", 
+    RowBox[{
+     RowBox[{"NextPrime", "[", 
+      RowBox[{"n", "+", "1"}], "]"}], "-", "n"}]}], ";"}]}]], "Input",
+ CellChangeTimes->{{3.702512084299154*^9, 3.7025121232260237`*^9}, {
+  3.702512169933564*^9, 3.7025121700995016`*^9}, {3.7025122104383907`*^9, 
+  3.7025122105376596`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"results", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["exp", "1"], "=", "1"}], ",", 
+    RowBox[{
+     SuperscriptBox["2", 
+      SubscriptBox["exp", "1"]], "<", 
+     SuperscriptBox["10", "9"]}], ",", 
+    RowBox[{
+     SubscriptBox["exp", "1"], "++"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"r", "=", 
+      SuperscriptBox["2", 
+       SubscriptBox["exp", "1"]]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"r", "<", 
+        SuperscriptBox["10", "9"]}], ",", 
+       RowBox[{
+        RowBox[{"FirstPosition", "[", 
+         RowBox[{"results", ",", "r", ",", 
+          RowBox[{"-", "1"}]}], "]"}], "\[Equal]", 
+        RowBox[{"-", "1"}]}], ",", 
+       RowBox[{"AppendTo", "[", 
+        RowBox[{"results", ",", "r"}], "]"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"For", "[", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["exp", "2"], "=", "1"}], ",", 
+       RowBox[{
+        SuperscriptBox["3", 
+         SubscriptBox["exp", "2"]], "<", 
+        SuperscriptBox["10", "9"]}], ",", 
+       RowBox[{
+        SubscriptBox["exp", "2"], "++"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"r", "=", 
+         RowBox[{
+          SuperscriptBox["2", 
+           SubscriptBox["exp", "1"]], " ", 
+          SuperscriptBox["3", 
+           SubscriptBox["exp", "2"]]}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"r", "<", 
+           SuperscriptBox["10", "9"]}], ",", 
+          RowBox[{
+           RowBox[{"FirstPosition", "[", 
+            RowBox[{"results", ",", "r", ",", 
+             RowBox[{"-", "1"}]}], "]"}], "\[Equal]", 
+           RowBox[{"-", "1"}]}], ",", 
+          RowBox[{"AppendTo", "[", 
+           RowBox[{"results", ",", "r"}], "]"}]}], "]"}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"For", "[", 
+         RowBox[{
+          RowBox[{
+           SubscriptBox["exp", "3"], "=", "1"}], ",", 
+          RowBox[{
+           SuperscriptBox["5", 
+            SubscriptBox["exp", "3"]], "<", 
+           SuperscriptBox["10", "9"]}], ",", 
+          RowBox[{
+           SubscriptBox["exp", "3"], "++"}], ",", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"r", "=", 
+            RowBox[{
+             SuperscriptBox["2", 
+              SubscriptBox["exp", "1"]], " ", 
+             SuperscriptBox["3", 
+              SubscriptBox["exp", "2"]], " ", 
+             SuperscriptBox["5", 
+              SubscriptBox["exp", "3"]]}]}], ";", "\[IndentingNewLine]", 
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{"r", "<", 
+              SuperscriptBox["10", "9"]}], ",", 
+             RowBox[{
+              RowBox[{"FirstPosition", "[", 
+               RowBox[{"results", ",", "r", ",", 
+                RowBox[{"-", "1"}]}], "]"}], "\[Equal]", 
+              RowBox[{"-", "1"}]}], ",", 
+             RowBox[{"AppendTo", "[", 
+              RowBox[{"results", ",", "r"}], "]"}]}], "]"}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"For", "[", 
+            RowBox[{
+             RowBox[{
+              SubscriptBox["exp", "4"], "=", "1"}], ",", 
+             RowBox[{
+              SuperscriptBox["7", 
+               SubscriptBox["exp", "4"]], "<", 
+              SuperscriptBox["10", "9"]}], ",", 
+             RowBox[{
+              SubscriptBox["exp", "4"], "++"}], ",", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"r", "=", 
+               RowBox[{
+                SuperscriptBox["2", 
+                 SubscriptBox["exp", "1"]], " ", 
+                SuperscriptBox["3", 
+                 SubscriptBox["exp", "2"]], " ", 
+                SuperscriptBox["5", 
+                 SubscriptBox["exp", "3"]], " ", 
+                SuperscriptBox["7", 
+                 SubscriptBox["exp", "4"]]}]}], ";", "\[IndentingNewLine]", 
+              RowBox[{"If", "[", 
+               RowBox[{
+                RowBox[{"r", "<", 
+                 SuperscriptBox["10", "9"]}], ",", 
+                RowBox[{
+                 RowBox[{"FirstPosition", "[", 
+                  RowBox[{"results", ",", "r", ",", 
+                   RowBox[{"-", "1"}]}], "]"}], "\[Equal]", 
+                 RowBox[{"-", "1"}]}], ",", 
+                RowBox[{"AppendTo", "[", 
+                 RowBox[{"results", ",", "r"}], "]"}]}], "]"}], ";", 
+              "\[IndentingNewLine]", 
+              RowBox[{"For", "[", 
+               RowBox[{
+                RowBox[{
+                 SubscriptBox["exp", "5"], "=", "1"}], ",", 
+                RowBox[{
+                 SuperscriptBox["11", 
+                  SubscriptBox["exp", "5"]], "<", 
+                 SuperscriptBox["10", "9"]}], ",", 
+                RowBox[{
+                 SubscriptBox["exp", "5"], "++"}], ",", "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"r", "=", 
+                  RowBox[{
+                   SuperscriptBox["2", 
+                    SubscriptBox["exp", "1"]], " ", 
+                   SuperscriptBox["3", 
+                    SubscriptBox["exp", "2"]], " ", 
+                   SuperscriptBox["5", 
+                    SubscriptBox["exp", "3"]], " ", 
+                   SuperscriptBox["7", 
+                    SubscriptBox["exp", "4"]], " ", 
+                   SuperscriptBox["11", 
+                    SubscriptBox["exp", "5"]]}]}], ";", "\[IndentingNewLine]",
+                  
+                 RowBox[{"If", "[", 
+                  RowBox[{
+                   RowBox[{"r", "<", 
+                    SuperscriptBox["10", "9"]}], ",", 
+                   RowBox[{
+                    RowBox[{"FirstPosition", "[", 
+                    RowBox[{"results", ",", "r", ",", 
+                    RowBox[{"-", "1"}]}], "]"}], "\[Equal]", 
+                    RowBox[{"-", "1"}]}], ",", 
+                   RowBox[{"AppendTo", "[", 
+                    RowBox[{"results", ",", "r"}], "]"}]}], "]"}], ";", 
+                 "\[IndentingNewLine]", 
+                 RowBox[{"For", "[", 
+                  RowBox[{
+                   RowBox[{
+                    SubscriptBox["exp", "6"], "=", "1"}], ",", 
+                   RowBox[{
+                    SuperscriptBox["13", 
+                    SubscriptBox["exp", "6"]], "<", 
+                    SuperscriptBox["10", "9"]}], ",", 
+                   RowBox[{
+                    SubscriptBox["exp", "6"], "++"}], ",", 
+                   "\[IndentingNewLine]", 
+                   RowBox[{
+                    RowBox[{"r", "=", 
+                    RowBox[{
+                    SuperscriptBox["2", 
+                    SubscriptBox["exp", "1"]], " ", 
+                    SuperscriptBox["3", 
+                    SubscriptBox["exp", "2"]], " ", 
+                    SuperscriptBox["5", 
+                    SubscriptBox["exp", "3"]], " ", 
+                    SuperscriptBox["7", 
+                    SubscriptBox["exp", "4"]], " ", 
+                    SuperscriptBox["11", 
+                    SubscriptBox["exp", "5"]], " ", 
+                    SuperscriptBox["13", 
+                    SubscriptBox["exp", "6"]]}]}], ";", "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"r", "<", 
+                    SuperscriptBox["10", "9"]}], ",", 
+                    RowBox[{
+                    RowBox[{"FirstPosition", "[", 
+                    RowBox[{"results", ",", "r", ",", 
+                    RowBox[{"-", "1"}]}], "]"}], "\[Equal]", 
+                    RowBox[{"-", "1"}]}], ",", 
+                    RowBox[{"AppendTo", "[", 
+                    RowBox[{"results", ",", "r"}], "]"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"For", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["exp", "7"], "=", "1"}], ",", 
+                    RowBox[{
+                    SuperscriptBox["17", 
+                    SubscriptBox["exp", "7"]], "<", 
+                    SuperscriptBox["10", "9"]}], ",", 
+                    RowBox[{
+                    SubscriptBox["exp", "7"], "++"}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"r", "=", 
+                    RowBox[{
+                    SuperscriptBox["2", 
+                    SubscriptBox["exp", "1"]], " ", 
+                    SuperscriptBox["3", 
+                    SubscriptBox["exp", "2"]], " ", 
+                    SuperscriptBox["5", 
+                    SubscriptBox["exp", "3"]], " ", 
+                    SuperscriptBox["7", 
+                    SubscriptBox["exp", "4"]], " ", 
+                    SuperscriptBox["11", 
+                    SubscriptBox["exp", "5"]], " ", 
+                    SuperscriptBox["13", 
+                    SubscriptBox["exp", "6"]], " ", 
+                    SuperscriptBox["17", 
+                    SubscriptBox["exp", "7"]]}]}], ";", "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"r", "<", 
+                    SuperscriptBox["10", "9"]}], ",", 
+                    RowBox[{
+                    RowBox[{"FirstPosition", "[", 
+                    RowBox[{"results", ",", "r", ",", 
+                    RowBox[{"-", "1"}]}], "]"}], "\[Equal]", 
+                    RowBox[{"-", "1"}]}], ",", 
+                    RowBox[{"AppendTo", "[", 
+                    RowBox[{"results", ",", "r"}], "]"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"For", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["exp", "8"], "=", "1"}], ",", 
+                    RowBox[{
+                    SuperscriptBox["19", 
+                    SubscriptBox["exp", "8"]], "<", 
+                    SuperscriptBox["10", "9"]}], ",", 
+                    RowBox[{
+                    SubscriptBox["exp", "8"], "++"}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"r", "=", 
+                    RowBox[{
+                    SuperscriptBox["2", 
+                    SubscriptBox["exp", "1"]], " ", 
+                    SuperscriptBox["3", 
+                    SubscriptBox["exp", "2"]], " ", 
+                    SuperscriptBox["5", 
+                    SubscriptBox["exp", "3"]], " ", 
+                    SuperscriptBox["7", 
+                    SubscriptBox["exp", "4"]], " ", 
+                    SuperscriptBox["11", 
+                    SubscriptBox["exp", "5"]], " ", 
+                    SuperscriptBox["13", 
+                    SubscriptBox["exp", "6"]], " ", 
+                    SuperscriptBox["17", 
+                    SubscriptBox["exp", "7"]], " ", 
+                    SuperscriptBox["19", 
+                    SubscriptBox["exp", "8"]]}]}], ";", "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"r", "<", 
+                    SuperscriptBox["10", "9"]}], ",", 
+                    RowBox[{
+                    RowBox[{"FirstPosition", "[", 
+                    RowBox[{"results", ",", "r", ",", 
+                    RowBox[{"-", "1"}]}], "]"}], "\[Equal]", 
+                    RowBox[{"-", "1"}]}], ",", 
+                    RowBox[{"AppendTo", "[", 
+                    RowBox[{"results", ",", "r"}], "]"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"For", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["exp", "9"], "=", "1"}], ",", 
+                    RowBox[{
+                    SuperscriptBox["23", 
+                    SubscriptBox["exp", "9"]], "<", 
+                    SuperscriptBox["10", "9"]}], ",", 
+                    RowBox[{
+                    SubscriptBox["exp", "9"], "++"}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"r", "=", 
+                    RowBox[{
+                    SuperscriptBox["2", 
+                    SubscriptBox["exp", "1"]], " ", 
+                    SuperscriptBox["3", 
+                    SubscriptBox["exp", "2"]], " ", 
+                    SuperscriptBox["5", 
+                    SubscriptBox["exp", "3"]], " ", 
+                    SuperscriptBox["7", 
+                    SubscriptBox["exp", "4"]], " ", 
+                    SuperscriptBox["11", 
+                    SubscriptBox["exp", "5"]], " ", 
+                    SuperscriptBox["13", 
+                    SubscriptBox["exp", "6"]], " ", 
+                    SuperscriptBox["17", 
+                    SubscriptBox["exp", "7"]], " ", 
+                    SuperscriptBox["19", 
+                    SubscriptBox["exp", "8"]], " ", 
+                    SuperscriptBox["23", 
+                    SubscriptBox["exp", "9"]]}]}], ";", "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"r", "<", 
+                    SuperscriptBox["10", "9"]}], ",", 
+                    RowBox[{
+                    RowBox[{"FirstPosition", "[", 
+                    RowBox[{"results", ",", "r", ",", 
+                    RowBox[{"-", "1"}]}], "]"}], "\[Equal]", 
+                    RowBox[{"-", "1"}]}], ",", 
+                    RowBox[{"AppendTo", "[", 
+                    RowBox[{"results", ",", "r"}], "]"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"For", "[", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["exp", "10"], "=", "1"}], ",", 
+                    RowBox[{
+                    SuperscriptBox["29", 
+                    SubscriptBox["exp", "10"]], "<", 
+                    SuperscriptBox["10", "9"]}], ",", 
+                    RowBox[{
+                    SubscriptBox["exp", "10"], "++"}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"r", "=", 
+                    RowBox[{
+                    SuperscriptBox["2", 
+                    SubscriptBox["exp", "1"]], " ", 
+                    SuperscriptBox["3", 
+                    SubscriptBox["exp", "2"]], " ", 
+                    SuperscriptBox["5", 
+                    SubscriptBox["exp", "3"]], " ", 
+                    SuperscriptBox["7", 
+                    SubscriptBox["exp", "4"]], " ", 
+                    SuperscriptBox["11", 
+                    SubscriptBox["exp", "5"]], " ", 
+                    SuperscriptBox["13", 
+                    SubscriptBox["exp", "6"]], " ", 
+                    SuperscriptBox["17", 
+                    SubscriptBox["exp", "7"]], " ", 
+                    SuperscriptBox["19", 
+                    SubscriptBox["exp", "8"]], " ", 
+                    SuperscriptBox["23", 
+                    SubscriptBox["exp", "9"]], " ", 
+                    SuperscriptBox["29", 
+                    SubscriptBox["exp", "10"]]}]}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"r", "<", 
+                    SuperscriptBox["10", "9"]}], ",", 
+                    RowBox[{
+                    RowBox[{"FirstPosition", "[", 
+                    RowBox[{"results", ",", "r", ",", 
+                    RowBox[{"-", "1"}]}], "]"}], "\[Equal]", 
+                    RowBox[{"-", "1"}]}], ",", 
+                    RowBox[{"AppendTo", "[", 
+                    RowBox[{"results", ",", "r"}], "]"}]}], "]"}], ";"}], 
+                    "\[IndentingNewLine]", ";"}]}], "\[IndentingNewLine]", 
+                    "]"}], ";"}]}], "\[IndentingNewLine]", "]"}], ";"}]}], 
+                    "\[IndentingNewLine]", "]"}], ";"}]}], 
+                    "\[IndentingNewLine]", "]"}], ";"}]}], 
+                  "\[IndentingNewLine]", "]"}], ";"}]}], 
+               "\[IndentingNewLine]", "]"}], ";"}]}], "\[IndentingNewLine]", 
+            "]"}], ";"}]}], "\[IndentingNewLine]", "]"}], ";"}]}], 
+      "\[IndentingNewLine]", "]"}], ";"}]}], "\[IndentingNewLine]", "]"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.702511439576601*^9, 3.7025114618974895`*^9}, {
+   3.702511515056748*^9, 3.702511857240858*^9}, 3.7025120792490435`*^9, {
+   3.702512247218941*^9, 3.702512261646309*^9}, {3.70251230135183*^9, 
+   3.7025123704358234`*^9}, {3.7025124084672565`*^9, 
+   3.7025125206875143`*^9}, {3.7025125653453803`*^9, 3.7025127043940067`*^9}, 
+   3.702513207596373*^9}],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{
+  3.7025127558374233`*^9, {3.702513198364729*^9, 3.7025132202064643`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.702511866964449*^9, 3.7025118685034776`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Times", " ", "@@", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Prime", "[", "n", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"n", ",", "1", ",", "9"}], "}"}]}], "]"}]}], "<", 
+  SuperscriptBox["10", "9"]}]], "Input",
+ CellChangeTimes->{{3.702511870957467*^9, 3.70251193126997*^9}, {
+  3.702511961372652*^9, 3.702511980445875*^9}}],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{
+  3.702511899573802*^9, {3.7025119638329086`*^9, 3.702511980886613*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"mOfn", "[", "630", "]"}]], "Input",
+ CellChangeTimes->{{3.7025121280280304`*^9, 3.7025121431698895`*^9}, 
+   3.702512216727519*^9}],
+
+Cell[BoxData["11"], "Output",
+ CellChangeTimes->{{3.702512136955907*^9, 3.702512143703068*^9}, 
+   3.702512176306138*^9, {3.7025122171393003`*^9, 3.70251222324495*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"l", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"AppendTo", "[", 
+  RowBox[{"l", ",", "2"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7025128451162786`*^9, 3.702512853800821*^9}, {
+  3.7025128914379377`*^9, 3.702512899208824*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "2", "}"}]], "Output",
+ CellChangeTimes->{3.702512854392328*^9, 3.7025128998390827`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"M", "=", 
+   RowBox[{"10", "^", "9"}]}], ";", 
+  RowBox[{"P", "=", "23"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"L", "[", "2", "]"}], "=", 
+    RowBox[{"2", "^", 
+     RowBox[{"Range", "[", 
+      RowBox[{"Floor", "[", 
+       RowBox[{"Log", "[", 
+        RowBox[{"2", ",", "M"}], "]"}], "]"}], "]"}]}]}], ";"}], 
+  "\n"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p", "=", "3"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"While", "[", 
+    RowBox[{
+     RowBox[{"p", "\[LessEqual]", "P"}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"L", "[", "p", "]"}], "=", 
+       RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"lastp", "=", 
+       RowBox[{"NextPrime", "[", 
+        RowBox[{"p", ",", 
+         RowBox[{"-", "1"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"For", "[", 
+       RowBox[{
+        RowBox[{"i", "=", "1"}], ",", 
+        RowBox[{"i", "\[LessEqual]", 
+         RowBox[{"Length", "[", 
+          RowBox[{"L", "[", "lastp", "]"}], "]"}]}], ",", 
+        RowBox[{"i", "++"}], ",", 
+        RowBox[{
+         RowBox[{"temp", "=", 
+          RowBox[{
+           RowBox[{"L", "[", "lastp", "]"}], "[", 
+           RowBox[{"[", "i", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+         RowBox[{"While", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"p", " ", "temp"}], "<", "M"}], ",", 
+           RowBox[{
+            RowBox[{"temp", "=", 
+             RowBox[{"p", " ", "temp"}]}], ";", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"L", "[", "p", "]"}], "=", 
+             RowBox[{"Append", "[", 
+              RowBox[{
+               RowBox[{"L", "[", "p", "]"}], ",", "temp"}], "]"}]}], ";"}]}], 
+          "]"}], ";"}]}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"p", "=", 
+       RowBox[{"NextPrime", "[", "p", "]"}]}], ";"}]}], "]"}], ";"}], 
+  "\n"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"S", "=", 
+   RowBox[{"{", "}"}]}], ";", 
+  RowBox[{"p", "=", "2"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"While", "[", 
+    RowBox[{
+     RowBox[{"p", "\[LessEqual]", "P"}], ",", 
+     RowBox[{
+      RowBox[{"S", "=", 
+       RowBox[{"Union", "[", 
+        RowBox[{"S", ",", 
+         RowBox[{"L", "[", "p", "]"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"p", "=", 
+       RowBox[{"NextPrime", "[", "p", "]"}]}]}]}], "]"}], ";"}], 
+  "\n"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SF", "=", 
+   RowBox[{
+    RowBox[{"NextPrime", "[", 
+     RowBox[{"S", "+", "2"}], "]"}], "-", "S"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"SF", "=", 
+   RowBox[{"Union", "[", 
+    RowBox[{"SF", ",", 
+     RowBox[{"{", "}"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{"Plus", "@@", "SF"}]}], "Input",
+ CellChangeTimes->{{3.7025456842310877`*^9, 3.702545684268713*^9}}],
+
+Cell[BoxData["2209"], "Output",
+ CellChangeTimes->{3.702545685825942*^9, 3.7025459772897263`*^9}]
+}, Open  ]]
+},
+WindowSize->{759, 833},
+WindowMargins->{{Automatic, 572}, {124, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 402, 10, 50, "Input"],
+Cell[CellGroupData[{
+Cell[985, 34, 16687, 385, 888, "Input"],
+Cell[17675, 421, 130, 2, 30, "Output"]
+}, Open  ]],
+Cell[17820, 426, 94, 1, 30, "Input"],
+Cell[CellGroupData[{
+Cell[17939, 431, 377, 10, 30, "Input"],
+Cell[18319, 443, 124, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18480, 450, 155, 3, 30, "Input"],
+Cell[18638, 455, 168, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18843, 462, 292, 7, 50, "Input"],
+Cell[19138, 471, 116, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19291, 478, 2839, 86, 354, "Input"],
+Cell[22133, 566, 97, 1, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
