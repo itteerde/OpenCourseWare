@@ -1,0 +1,1392 @@
+
+\documentclass[a4paper]{book}%[a4paper,oneside]
+\usepackage[pass]{geometry}%[hmarginratio=1:1]{geometry}
+%\usepackage[utf8]{inputenc}
+
+\usepackage{polyglossia}
+\setdefaultlanguage[spelling=new]{german}
+\setotherlanguage{english}
+%\setotherlanguage[numerals=western]{farsi}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{csquotes}
+
+\usepackage[
+    backend=biber,
+    style=numeric,
+    sortlocale=de_DE,
+    natbib=true,
+    url=false,
+    doi=true,
+    eprint=false
+]{biblatex}
+\addbibresource{itteerde.bib}
+\bibliography{itteerde}	
+
+\usepackage{makeidx}
+\usepackage{longtable}
+\usepackage{mdframed}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{pictex}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{array}
+\usepackage{xspace}
+\usepackage{xcolor}
+\usepackage{pdfpages}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds,arrows}
+
+\usepackage{verse}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+
+\usepackage{chemfig}
+\usepackage{listings}
+\usepackage{soul}
+\usepackage{calc}
+\usepackage{metalogo}
+\usepackage{hologo}
+
+%\usepackage{stmaryrd}
+%\usepackage{marvosym}
+
+\usepackage{url}
+\usepackage[position=top]{caption}
+
+\usepackage{etoolbox}
+\usepackage{etaremune}
+
+\usepackage[citecolor=black,urlcolor=black,linkcolor=black]{hyperref}
+\hypersetup{
+    colorlinks=true,
+}
+\usepackage[xindy={language=german,codepage=duden-utf8},
+    nonumberlist,
+    toc,
+    nopostdot,
+    style=altlist,
+    nogroupskip
+    ]{glossaries}
+    \GlsSetXdyCodePage{duden-utf8}
+\apptocmd{\thebibliography}{\raggedright}{}{}
+
+\newfontfamily\arabicfont{Amiri}
+
+
+
+\def\UrlBreaks{\do\A\do\B\do\C\do\D\do\E\do\F\do\G\do\H\do\I\do\J\do\K
+\do\L%
+\do\M\do\N\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X\do\Y\do\Z
+\do\0%
+\do\a\do\b\do\c\do\d\do\e\do\f\do\g \do\h\do\i\do\j\do\k\do\l%
+\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v \do\w\do\x\do\y\do\z
+%
+\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9\do\-}%
+\def\UrlBigBreaks{\do\_}
+
+
+\newcommand{\uu}[1]{\underline{#1}}
+\newcommand{\ii}[1]{\textit{#1}}
+\newcommand{\tm}{\textsuperscript{\tiny{TM}}}
+\newcommand{\rtm}{\textsuperscript{\tiny{\circledR}}}
+\newcommand{\whatsapp}{\textit{WhatsApp}\xspace}
+
+\newcommand{\youtube}{\url{http://www.youtube.com}\xspace}
+\newcommand{\tagesschau}{\url{http://www.tagesschau.de}\xspace}
+\newcommand{\wikipedia}{\url{http://en.wikipedia.org}\xspace}
+\newcommand{\cosmos}{\textit{Cosmos - A Space Time Odyssee}\index{Unterhaltung!Cosmos - A Space Time Odyssee}\xspace}
+
+\newcommand{\vcenteredincludeIcon}[1]{\begingroup
+    \setbox0=\hbox{\includegraphics[height=1em]{#1}}%
+    \parbox{\wd0}{\box0}\endgroup
+}
+\newcommand\crule[3][black]{\textcolor{#1}{\rule{#2}{#3}}}
+
+\newcommand{\TikZ}{Ti\textit{k}z\xspace}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+\newcommand{\emojiSmile}{\vcenteredincludeIcon{graphics/smile.jpg}\xspace}
+\newcommand{\emojiSmileT}{\vcenteredincludeIcon{graphics/smile_st.jpg}\xspace}
+\newcommand{\emojiSet}{\vcenteredincludeIcon{graphics/smile_set.jpg}\xspace}
+\newcommand{\emojiSaint}{\vcenteredincludeIcon{graphics/smile_saint.jpg}\xspace}
+\newcommand{\emojiTears}{\vcenteredincludeIcon{graphics/smile_tears.jpg}\xspace}
+\newcommand{\emojiGrin}{\vcenteredincludeIcon{graphics/smile_grin.jpg}\xspace}
+\newcommand{\emojiWink}{\vcenteredincludeIcon{graphics/smile_wink.jpg}\xspace}
+\newcommand{\emojiTOE}{\vcenteredincludeIcon{graphics/smile_toe.jpg}\xspace}
+\newcommand{\emojiTES}{\vcenteredincludeIcon{graphics/smile_tes.jpg}\xspace}
+\newcommand{\emojiSunglasses}{\vcenteredincludeIcon{graphics/smile_sunglasses.jpg}\xspace}
+\newcommand{\emojiBlushLips}{\vcenteredincludeIcon{graphics/smile_blushlips.jpg}\xspace}
+\newcommand{\emojiBlushSmile}{\vcenteredincludeIcon{graphics/smile_blushsmile.jpg}\xspace}
+\newcommand{\emojiDevil}{\vcenteredincludeIcon{graphics/smile_devil.jpg}\xspace}
+\newcommand{\emojiBlusBigEyes}{\vcenteredincludeIcon{graphics/smile_blushbigeyes.jpg}\xspace}
+\newcommand{\emojiSmileTeeth}{\vcenteredincludeIcon{graphics/smile_teeth.jpg}\xspace}
+\newcommand{\emojiSmileTears}{\vcenteredincludeIcon{graphics/smile_tears.jpg}\xspace}
+\newcommand{\emojiSmileKiss}{\vcenteredincludeIcon{graphics/smile_kiss.jpg}\xspace}
+\newcommand{\emojiSeeNoEvil}{\vcenteredincludeIcon{graphics/emojiSeeNoEvil.jpg}\xspace}
+\newcommand{\emojiSmileWink}{\vcenteredincludeIcon{graphics/smile_wink.jpg}\xspace}
+\newcommand{\emojiSmileSad}{\vcenteredincludeIcon{graphics/smile_sad.jpg}\xspace}
+\newcommand{\emojiHandPointUp}{\vcenteredincludeIcon{graphics/emoji_hand_point_up.jpg}\xspace}
+
+\newcommand{\emojiBWSmile}{\vcenteredincludeIcon{graphics/smile_bw.jpg}\xspace}
+\newcommand{\emojiBWSmileT}{\vcenteredincludeIcon{graphics/smile_bw_st.jpg}\xspace}
+\newcommand{\emojiBWSet}{\vcenteredincludeIcon{graphics/smile_bw_set.jpg}\xspace}
+\newcommand{\emojiBWSaint}{\vcenteredincludeIcon{graphics/smile_bw_saint.jpg}\xspace}
+\newcommand{\emojiBWTears}{\vcenteredincludeIcon{graphics/smile_bw_tears.jpg}\xspace}
+\newcommand{\emojiBWGrin}{\vcenteredincludeIcon{graphics/smile_bw_grin.jpg}\xspace}
+\newcommand{\emojiBWWink}{\vcenteredincludeIcon{graphics/smile_bw_wink.jpg}\xspace}
+\newcommand{\emojiBWTOE}{\vcenteredincludeIcon{graphics/smile_bw_toe.jpg}\xspace}
+\newcommand{\emojiBWTES}{\vcenteredincludeIcon{graphics/smile_bw_tes.jpg}\xspace}
+\newcommand{\emojiBWSunglasses}{\vcenteredincludeIcon{graphics/smile_bw_sunglasses.jpg}\xspace}
+\newcommand{\emojiBWBlushLips}{\vcenteredincludeIcon{graphics/smile_bw_blushlips.jpg}\xspace}
+\newcommand{\emojiBWBlushSmile}{\vcenteredincludeIcon{graphics/smile_bw_blushsmile.jpg}\xspace}
+\newcommand{\emojiBWDevil}{\vcenteredincludeIcon{graphics/smile_bw_devil.jpg}\xspace}
+\newcommand{\emojiBWBlusBigEyes}{\vcenteredincludeIcon{graphics/smile_bw_blushbigeyes.jpg}\xspace}
+\newcommand{\emojiBWSmileTeeth}{\vcenteredincludeIcon{graphics/smile_bw_teeth.jpg}\xspace}
+\newcommand{\emojiBWSmileBWTears}{\vcenteredincludeIcon{graphics/smile_bw_tears.jpg}\xspace}
+\newcommand{\emojiBWSmileKiss}{\vcenteredincludeIcon{graphics/smile_bw_kiss.jpg}\xspace}
+\newcommand{\emojiBWSeeNoEvil}{\vcenteredincludeIcon{graphics/emoji_bw_SeeNoEvil.jpg}\xspace}
+\newcommand{\emojiBWSmileWink}{\vcenteredincludeIcon{graphics/smile_bw_wink.jpg}\xspace}
+\newcommand{\emojiBWSmileSad}{\vcenteredincludeIcon{graphics/smile_bw_sad.jpg}\xspace}
+\newcommand{\emojiBWHandPointUp}{\vcenteredincludeIcon{graphics/emoji_bw_hand_point_up.jpg}\xspace}
+
+\newcommand{\proofsquare}{
+    \begin{flushright}
+      $\square$
+    \end{flushright}\xspace
+}
+\newcommand{\done}{
+    \begin{flushright}
+      $\bullet$
+    \end{flushright}\xspace
+}
+\newcommand{\donenot}{
+    \begin{flushright}
+      $\ldots$
+    \end{flushright}\xspace
+}
+\newcommand{\noresult}{
+    \begin{flushright}
+      $\varnothing$
+    \end{flushright}\xspace
+}
+
+\newcommand{\progress}{
+    \begin{flushright}
+      $\Delta$
+    \end{flushright}\xspace
+}
+
+\newcommand{\topicend}{
+      $\blacktriangleleft$
+}
+
+\newcommand{\meineChance}{\textit{Meine Chance}\xspace\index{Meine Chance}}
+
+\tikzstyle{every node}=[font=\small]
+\tikzstyle{every node}=[inner sep=1pt]
+\usetikzlibrary{calc}
+\usetikzlibrary{matrix}
+\def\mcr{\pgfmatrixcurrentrow}\def\mcc{\pgfmatrixcurrentcolumn}
+\def\width{12}
+\def\hauteur{12}
+
+\definecolor{rosso}{RGB}{220,57,18}
+\definecolor{giallo}{RGB}{255,153,0}
+\definecolor{blu}{RGB}{102,140,217}
+\definecolor{verde}{RGB}{16,150,24}
+\definecolor{viola}{RGB}{153,0,153}
+
+\makeatletter
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+
+
+\newcommand{\pie}[3][]{
+    \begin{scope}[#1]
+    \pgfmathsetmacro{\curA}{90}
+    \pgfmathsetmacro{\r}{1}
+    \def\c{(0,0)}
+    \node[pie title] at (90:1.3) {#2};
+    \foreach \v/\s in{#3}{
+        \pgfmathsetmacro{\deltaA}{\v/100*360}
+        \pgfmathsetmacro{\nextA}{\curA + \deltaA}
+        \pgfmathsetmacro{\midA}{(\curA+\nextA)/2}
+
+        \path[slice,\s] \c
+            -- +(\curA:\r)
+            arc (\curA:\nextA:\r)
+            -- cycle;
+        \pgfmathsetmacro{\d}{max((\deltaA * -(.5/50) + 1) , .5)}
+
+        \begin{pgfonlayer}{foreground}
+        \path \c -- node[pos=\d,pie values,values of \s]{$\v\%$} +(\midA:\r);
+        \end{pgfonlayer}
+
+        \global\let\curA\nextA
+    }
+    \end{scope}
+}
+
+\newcommand{\legend}[2][]{
+    \begin{scope}[#1]
+    \path
+        \foreach \n/\s in {#2}
+            {
+                  ++(0,-10pt) node[\s,legend box] {} +(5pt,0) node[legend label] {\n}
+            }
+    ;
+    \end{scope}
+}
+
+
+\theoremstyle{definition}
+%\theorembodyfont{\small}
+\newtheorem{definition}{Definition}
+\newtheorem{uebung}{Übung}
+\newtheorem{beispiel}{Beispiel}
+
+\newglossary*{symbols}{Symbolverzeichnis}
+
+\lstset{
+    language={java},
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,
+    numbers=left,
+    stepnumber=5,
+    numberstyle=\tiny\color{gray},
+    mathescape=true,
+    showstringspaces=false
+}
+
+\include{glossar}
+\include{symbols}
+\makeglossaries
+
+\setlength{\parskip}{1ex}
+
+\let\origitemize\itemize
+\def\itemize{\origitemize\itemsep0pt}
+
+%\setcounter{tocdepth}{1}
+%\setcounter{secnumdepth}{0}
+
+\makeindex
+
+\begin{titlepage}
+%\title{Meine Chance II - 2017\\Mathematik}
+\centering
+\title{Mathematik\\ \vspace{1cm} \normalsize \centering Konzept für den Mathematik-Unterricht in Vorbereitung für die Abschlussprüfung für den Hauptschulabschluss als Nichtschülerprüfung in Hessen, konkretisiert für das Projekt \enquote{Meine Chance} ($mc^2$)\\\vspace{3em}\footnotesize Die freie, insbesondere unentgeltliche, Nutzung im Rahmen von \enquote{Meine Chance} ist auf Dauer vom Urheber genehmigt. Sollte der Autor dauerhaft nicht erreichbar sein geht das komplette Material inklusive der \LaTeX-Sources in public domain über.}
+
+\centering
+\author{Erik Itter}
+\end{titlepage}
+
+
+\begin{document}
+
+\newgeometry{hmarginratio=1:1}
+\maketitle
+\restoregeometry
+\tableofcontents
+
+\printglossary[type=symb, style=long]
+
+\part{Theorie}
+
+\chapter{Heterogenität}
+
+Ausgangspunkt für die Überlegungen zur Bedeutung von und Umgang mit Heterogenität der Teilnehmer, bezogen auf den Unterricht in Mathematik, ist zunächst \citep{Leiss2014}. Der Unterricht muss mit bewusster Binnendifferenzierung arbeiten, die über das typische Maß deutscher Schulklassen hinaus geht. Die Herausforderungen im Unterricht in einer Gruppe von Migranten mit unterschiedlichen sprachlichen Niveaus kommt dazu die besondere Problematik der Sprachbarriere hinzu, die aber für den Unterricht in den ersten Monaten keine unüberwindbare Hürde darstellt, da das Material gut visuell gestützt vermittelt werden kann. Entsprechend können Textaufgaben in den ersten Monaten nicht genutzt werden. Die Modellierung muss damit, zumindest als explizites Thema, Richtung Ende der Maßnahme rutschen - auch wenn das u.a. hinsichtlich der Motivation der Themen des Mathematik-Unterrichts nicht ideal ist.
+
+Eine strukturelle Vereinfachung, die jedoch eher zu Lasten der Lernenden gehen wird, ist, dass die Prüfungen als Nichtschüler mit sich bringen, dass die Bewertung (und das Bestehen) alleine von Kompetenzerwerb und -nachweis abhängen und es kaum\footnote{Theoretisch keinen, praktisch durch Berücksichtigung des Hintergrundes in der mündlichen Prüfung.} Raum für eine Würdigung der Fortschritte gibt.
+
+Der organisatorische Schwerpunkt zur Berücksichtigung der Besonderheiten wird auf Tutorien liegen, die weitgehend kooperative Lernumgebung bieten sollen, als Ergänzung zum klassischen vortragenden und diskutierenden Unterricht (Zu den Gründen vgl. \citep[S.7ff]{Leiss2014}, besonders betont sei hier die Eigenverantwortung der Lernenden, die im klassischen Setting leicht an die Lehrperson zurückgegeben werden kann.).
+
+Gerade in einer Lern- und Lehrsituation hoher Heterogenität kann eine systematische Beobachtung und Dokumentation wertvoll sein um im Team der Lehrenden einander ergänzende Maßnahmen durchzuführen. Dokumentation erleichtert u.a. individuelle Schwächen aufzudecken, die im Laufe der Maßnahme zu korrigieren sind. Vorerst ist das Werkzeug dafür der Modulplan der für den Abschluss vorausgesetzten Kompetenzen, zusammenfassend jedem Teilnehmer als Lernprotokoll/ Fortschrittskontrolle ausgehändigt, sowie für die laufende Vorbereitung des Unterrichts als \textit{Microsoft Excel} spreadsheet für den gesamten Jahrgang fortwährend geführt.
+
+
+\chapter{Tutorium, Lern- und Übungsgruppen}
+
+Kaum jemand kann Mathematik gut alleine lernen. Mathematik so zu lernen, dass man sie operativ kompetent anwenden kann, erfordert i.d.R. dass man die Inhalte selbst erklären kann. So lange das nicht gelingt fehlen üblicherweise Aspekte des Sachverhalts. Schon deshalb rein egoistisch ist es für alle Teilnehmer sinnvoll sich gegenseitig die Inhalte beizubringen, sie gemeinsam einzuüben und zu vertiefen und sie für andere zu präsentieren/ referieren. Jeder Teilnehmer muss an einem Tutorium teilnehmen, das als betreute Lerngruppe verstanden wird. Verglichen mit dem universitären Lehren der Mathematik handelt es sich eher um Lerngruppen. Wir nennen es Tutorien, um es von überhaupt nicht betreutem Lernen in eigener Regie der Teilnehmer zu unterscheiden.
+
+
+\section{Lehrerinterventionen}
+
+
+\section{Mathematisches Modellieren}
+
+Das Modellieren (einfacher) Probleme sollte von Anfang an geübt werden, so dass textuell gestellte Probleme mit den Inhalten des Unterrichts verbunden werden, die sonst häufig nur als Rechenvorschriften gelernt werden, so dass Textaufgaben in der Prüfung nicht bewältigt werden können, geschweige denn als Basis für wahrscheinliche weitergehende Kontakte mit der Mathematik, insbesondere in der Berufsausbildung, nicht nur aber vor allem in technischen Berufen.
+
+
+\part{Lehrinhalte}
+
+\chapter{Was ist Mathematik?}
+
+Die \textbf{Mathematik} im Hauptschulabschluss\footnote{Für den Realschulabschluss kommt schon einiges zu Funktionen, auch wenn man noch ohne das durch die Prüfung kommt.} verstehen wir als \textbf{Zählen}, \textbf{Messen}, (elementares) \textbf{Rechnen} und die \textbf{Kommunikation} dessen.
+
+
+\chapter{Zahlen}
+
+\section{Natürliche Zahlen ($\mathbb{N}$)}
+
+\textbf{Natürliche Zahlen} benutzen wir zum Zählen. Ein Apfel, zwei Äpfel, drei Äpfel, vier Äpfel, ... $\mathbb{N} = \{ 0$\footnote{Viele Mathematiker betrachten die Null nicht als natürliche Zahl. Für uns spielt keine Rolle ob Null eine natürliche Zahl ist oder nicht.}$, 1, 2, 3, 4, 5, 6, 7, 8, 9, ...\}$
+
+Jede natürliche Zahl $n$ kann (in einer eindeutigen Weise) in \textbf{Primfaktoren} zerlegt werden (\textbf{Faktorisierung}). 6 ist \textbf{teilbar} durch 2 und 3. 1 und die Zahl selbst zählen hier nicht.
+
+\begin{equation}
+    6 = 2 \cdot 3
+\end{equation}
+
+Die Reihenfolge der \textbf{Faktoren} ist egal. $3 \cdot 2$ und $2 \cdot 3$ werden als die selbe \textbf{Zerlegung} betrachtet.
+
+\begin{equation}
+    60 = 2 \cdot 2 \cdot 3 \cdot 5
+\end{equation}
+
+
+\section{Numeralia (Zahlwörter)}\label{numeralia}
+
+\enquote{eins, zwei, drei, vier, fünf, sechs, sieben, ...} ist der Beginn der Zahlwörter (als Kardinalzahlen). \citep[Randzahl 509]{DudenGrammatik2016} gibt eine unvollständige Einleitung. Demnach sind sowohl Schreibweisen als auch gesprochene Zahlen nicht (mehr) streng festgelegt. Eine veraltete Regel lautet dass natürliche Zahlen bis zwölf als Zahlwort geschrieben werden, darüber hinaus als Ziffernfolge. Es bleibt das Problem Zahlwörter für größere Zahlen festzulegen, so dass größere Zahlen gesprochen werden können. Die Numeralia von 0 bis 12 sind \enquote{eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf}. Für Zahlen mit Zehnerstellen\footnote{Mit \enquote{echten} Zehnerstellen, also keine Null in der vorletzten Ziffer der Zahl.} werden die Zehner-Suffixe benötigt, diese sind \enquote{-zehn, -zwanzig, -dreißig, -vierzig, -fünfzig, -sechzig, -siebzig, -achtzig, -neunzig}. Für die Hunderter-Stellen werden die Numerale von 1 bis 9 vor das Numeral \enquote{hundert} gesetzt. Statt \enquote{eins} ist das Numeral hier \enquote{ein}. Sind Hunderter vorhanden wird zwischen ihnen und den Zehnern \enquote{und} eingefügt: \enquote{eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf, dreizehn, vierzehn, ..., neunzehn, zwanzig, einundzwanzig, zweiundzwanzig, ..., neunundzwanzig, dreißig, einunddreißig, ..., neunundneunzig, einhundert, einhundertundeins, ..., einhundertundneunundneunzig\footnote{\cite{DudenGrammatik2016} erkennt ausdrücklich auch hundertneunundneunzig als korrekt an.}, zweihundert, zweihunderundeins, ... neunhundertundneunundneunzig}.
+
+Bei Zahlen ab 1.000 (\enquote{eintausend}) werden die Numeralia in 3er-Paketen (Tripeln) gebildet. Das kleinste Tripel wird mit \enquote{und} verknüpft angehängt. 123.456 wird \enquote{einhundertunddreiundzwanzigtausendundvierhundertundsechsundfünfzig} gelesen\footnote{\citep{DudenGrammatik2016} erkennt hier gleich mehrere unterschiedliche Varianten als korrekt an.}. Es wird zunächst das höchstwertige Tripel gebildet, so dass alle noch folgenden Teile der Zahl echte (dreistellige) Tripel sind. Also wird für 23456 456 abgetrennt und das (unvollständige) höchstwertige Tripel 23 gelesen: \enquote{dreiundzwanzig}. Angehängt wird der Name der Größenordnung (für das vorletzte Tripel 1.000 ($10^3$), \enquote{eintausend}). Danach wird das nächstkleinere Tripel (hier das letzte, 456 gelesen, \enquote{vierhundertundsechsundfünfzig}. Zahlen unter einer Million werden zusammen geschrieben, so dass 23.456 \enquote{dreiundzwanzigtausendundvierhundertundsechsundfünfzig}\footnote{Korrekt wäre u.a. auch \enquote{dreiundzwanzigtausendvierhundertsechsundfünfzig}, aber die Varianten mit weniger \enquote{und} brauchen mehr Bildungsregeln.} heist. Die Namen der ersten Größenordnungen sind (Singular/Plural) $10^3$: tausend/tausend, $10^6$: Million/Millionen, $10^9$: Milliarde/Milliarden, $10^{12}$: Billion/Billionen, $10^{15}$: Billiarde/Billiarden. Für dem Alltag sollten die Namen bis zu den Milliarden bekannt sein (z.B. Bundeshaushalt).
+
+Es ergeben sich z.B. $1.123.456.789.123$: \enquote{eine Billion einhundertunddreiundzwanzig Milliarden vierhundertundsechsundfünfzig Millionen siebenhundertundneunundachtzigtausendundeinhundertunddreiundzwanzig} und $89.001.456.901$: \enquote{neunundachtzig Milliarden eine Million vierhundertundsechsundfünfzigtausendundneunhunderundeins}. Solche Numeralia werden nie geschrieben, die in Ziffern geschrieben Zahl muss aber zumindest bis in den Bereich der Milliarden vorgelesen/ ausgesprochen werden können. Die hier angegebene Variante (mit maximalen \enquote{und}-Verbindungen) scheint die Variante mit den wenigsten Bildungsregeln aus den korrekten Varianten zu sein. Scheinen Stellen nach der größten Größenordnung zu fehlen (Nullen) werden diese nicht gesprochen: $999.999.999$, $1.000.000.000$, $1.000.000.001$ wird \enquote{neunhundertundneunundneunzig Millionen neunhunderundneunungneunzigtausendundneunhundertundneunundneunzig, eine Milliarde, eine Milliarde und eins} gelesen.
+
+\begin{uebung}[Numeralia (Zahlwörter)]
+    Schreibe die Numeralia auf für 1 bis 21, 31, 42, 53, 64, 72, 84, 93, 99, 100, 101, 199, 200, 201, 999, 1.000, 1.001, 9.000, 9.999, 123.456, 200.000, 999.999, 1.000.000, 10.000.001, 999.999.999, 1.000.000.000, 1.000.000.001 und 123.456.789.012.345.
+\end{uebung}
+
+\section{Primzahlen}
+
+Eine natürliche Zahl $n > 1$\footnote{Wieso wir die Eins nicht \textbf{Primzahl} nennen braucht uns hier nicht zu interessieren, weder für den Hauptschulabschluss noch für den Realschulabschluss.}, die nur durch 1 und sich selbst \textbf{teilbar} ist, nennen wir eine \textbf{Primzahl}. Die ersten paar Primzahlen lernen wir auswendig um die \textbf{Primfaktoren} einer Zahl schneller zu finden, die wir in der Bruchrechnung brauchen: $\mathbb{P}=\left\{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, ...\right\}$.
+
+\begin{beispiel}
+    Die \textbf{Primfaktorzerlegung} von $6$ ist $\{2,3\}$, die von $120$ ist $\{2,2,2,3,5\}$. Wir schreiben $\{2,2,2,3,5\}$ auch als $\{2^3,3^1,5^1\}$ oder $\{2^3,3,5\}$.
+\end{beispiel}
+
+
+\section{Variablen (Unbekannte/ Veränderliche)}\index{Variablen}\index{Unbekannte|see{Variable}}\index{Veränderliche|see{Variable}}
+
+In der Mathematik wollen wir (insbesondere in \textbf{Formeln}) möglichst \textbf{allgemeine} Aussagen treffen um möglichst viel mit diesen anfangen zu können. Oftmals benutzen wir dazu keine Zahlen, sondern Namen wie \enquote{a}, \enquote{b} und \enquote{c} oder \enquote{x} und \enquote{y}. Diese Namen stehen immer für Zahlen. Man kann sie durch beliebige Zahlen ersetzen (aber in einer Rechnung immer durch die Selbe). Die Fläche eines Rechtecks nennen wir z.B. allgemein $a \cdot b$, oder \enquote{Länge mal Breite}. Jeder (positive) Wert ergibt ein Rechteck, dessen Fläche wir so berechnen können: $A_{\text{Rechteck}} = a \cdot b = A_R = a b$\footnote{\enquote{A} steht für \enquote{area}, englisch für \textbf{Fläche/ Flächeninhalt}}.
+
+\begin{beispiel}
+    Gegeben sei ein Rechteck mit der Länge $a = 12 \text{cm}$ und Breite $b = 5 \text{cm}$. Zu berechnen sei der Flächeninhalt des Rechtecks $A_R = a b$.
+    \begin{align}
+      A_R & =  a b && a \rightarrow 12 cm, b \rightarrow 6 cm\\
+       & =  12 cm \cdot 6 cm &&\\
+       & =  60 cm^2 &&
+    \end{align}
+\end{beispiel}
+
+Genau genommen ersetzen wir wie im Beispiel zu sehen, in diesem Fall mit einer reellen Zahl und einer Maßeinheit. Diese Feinheiten können wir jedoch zunächst ignorieren und in den kommenden Monaten intuitiv durch Üben lernen.
+
+
+\chapter{Elementare Rechenoperationen}
+
+\enquote{$1+2=3$}\glsadd{symb:Plus}\glsadd{symb:Minus}\glsadd{symb:Gleich} sprechen wir \enquote{eins plus zwei (ist) gleich drei}. \textbf{Plus} zu rechnen nennen wir \textbf{addieren} oder \textbf{die Addition}. \enquote{$3-2=1$} sprechen wir \enquote{drei minus zwei (ist) gleich 1}. \textbf{Minus} zu rechnen nennen wir \textbf{subtrahieren} oder \textbf{die Subtraktion}. \textbf{Das Ergebnis} einer \textbf{Subtraktion} nennen wir \textbf{die Differenz}. Wir sagen auch \enquote{die Differenz von drei und zwei ist eins}\footnote{und umgangssprachlich/ alltagssprachlich auch \enquote{die Differenz von zwei und drei ist eins (obwohl $2-3=-1$). Hierbei kommt die Vorstellung der \textbf{Differenz} als \textbf{Abstand} am \textbf{Zahlenstrahl} $\mathbb{R}^1$ zum intuitiven Ausdruck}}.
+
+\section{Addition und Subtraktion am Zahlenstrahl}
+
+Das Rechnen mit \glsdisp{symb:Plus}{$+$} und \glsdisp{symb:Minus}{$-$} wird als Bewegung auf dem Zahlenstrahl der reellen Zahlen verstanden sofern es überhaupt problematisch ist. Von den Lehrenden aus wird das Berechnen von Summen als bekannt vorausgesetzt. Wird klar, dass das nicht gerechtfertigt ist, so wird der Zahlenstrahl\index{Zahlenstrahl} als Interpretation von $\mathbb{R}$ verwendet ohne $\mathbb{R}$ zu problematisieren, einzuführen oder zu definieren\footnote{Der Zahlenstrahl bringt einen natürlichen Weg zu $\mathbb{R}$ mit, da eine kontinuierliche \enquote{Strecke} schlecht in diskrete Abschnitte aufgeteilt sein kann elementar, da man jedes Stück wieder teilen kann ins Unendliche. (Dass vielleicht die Realität gar keine kontinuierlichen Räume beinhaltet wird die Lernenden sicher nicht stören und sei mit einem Hinweis auf die breite Anwendbarkeit der Analysis beiseite gelegt.)}.
+
+\begin{equation}\label{eqn:00001}
+    1 + 2 + 3
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+\begin{tikzpicture}[>=triangle 60]
+
+    \draw (1,1) -- +(10,0);
+
+    \foreach \x in {1,...,11}{
+        \pgfmathtruncatemacro{\label}{\x-1}
+        \draw (\x,0.8) -- +(0,0.4);
+        \node[below] (xa) at (\x,0.7) {\label};
+    }
+
+    \coordinate[label={[label distance=10pt]90:1}] (1) at (2,2);
+    \coordinate[label={[label distance=10pt]90:3}] (3) at (4,2);
+    \coordinate[label={[label distance=10pt]90:6}] (6) at (7,2);
+    \fill (1) circle (1pt);
+    \fill (3) circle (1pt);
+    \draw[->,shorten >=4pt] (1) -- (3) node[midway, below] {+2};
+    \fill (6) circle (1pt);
+    \draw[->,shorten >=4pt] (3) -- (6) node[midway, below] {+3};
+
+\end{tikzpicture}
+  \caption{$+/-$ am Zahlenstrahl $\mathbb{R}$}\label{fig:zahlenstrahlAddition}
+\end{figure}
+
+Problematisch wird das Subtrahieren von negativen Zahlen, für das man sich am Zahlenstrahl zwar mit \textquote{Drehungen} um 180° und damit $-(-x) = x$ aus der Affäre ziehen kann, das aber mathematisch so nicht vertretbar ist. Sauber wäre hier schlicht die Regel für die Äquivalenz anzugeben und die Lernenden als \gls{TRS} arbeiten zu lassen. Die Repräsentation kontinuierlicher Strecken vermeidet bei Lernenden, die bereits verfestigt zählen\index{verfestigtes Zählen} (vgl. \citep[S. 112]{Hasemann2014}) statt zu rechnen dies weiter zu bedienen, wie z.B. durch eine Darstellung $\clubsuit + \clubsuit = \clubsuit \clubsuit$ oder $\clubsuit + \clubsuit = 2 \clubsuit$\footnote{Die Darstellung $\clubsuit + \clubsuit = 2 \clubsuit$ hat ihre Berechtigung in der Algebra, wenn die Lernenden dort den abstrakten Umgang mit einer Unbekannten, $x$, erlernen.}. D.h. beim Sprechen über Arithmetik in $\mathbb{R}$ ist wennimmer möglich in Strecken zu reden und Zählen zu vermeiden.
+
+\begin{equation}
+    -1 + 5 - 3
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+\begin{tikzpicture}[>=triangle 60]
+
+    \draw (1,1) -- +(10,0);
+
+    \foreach \x in {-2,...,8}{
+        \pgfmathtruncatemacro{\label}{\x}
+        \pgfmathtruncatemacro{\posx}{\x+3}
+        \draw (\posx,0.8) -- +(0,0.4);
+        \node[below] (xa) at (\posx,0.7) {\label};
+    }
+
+    \coordinate[label={[label distance=10pt]90:-1}] (-1) at (2,3);
+    \coordinate[label={[label distance=10pt]90:4}] (4) at (7,3);
+    \fill (-1) circle (1pt);
+    \fill (4) circle (1pt);
+    \draw[->,shorten >=4pt] (-1) -- (4) node[midway, below] {+5};
+    \fill (6) circle (1pt);
+
+    \coordinate[label={[label distance=10pt]90:4}] (4l) at (7,2);
+    \coordinate[label={[label distance=10pt]90:1}] (1l) at (4,2);
+    \fill (1l) circle (1pt);
+    \fill (4l) circle (1pt);
+    \draw[->,shorten >=4pt] (4l) -- (1l) node[midway, below] {-3};
+
+\end{tikzpicture}
+  \caption{$+/-$ am Zahlenstrahl $\mathbb{R}$}\label{fig:zahlenstrahlSubtraktion}
+\end{figure}
+
+\begin{definition}[Betrag]\index{Betrag}
+    Wir nennen $|x|$ den Betrag (engl. abs) von $x$. Es sei $|-x| = x$, $|x|=x$ und damit $|-x|=|x|$.
+\end{definition}
+
+
+
+\chapter{Maßeinheiten}
+
+\chapter{1 mal 1}
+
+Das \enquote{$1 \times 1$}, sprich \enquote{ein mal eins}, wird perfekt auswendig gelernt.
+
+\begin{tikzpicture}[border style/.style={
+    draw,fill=#1,minimum size=0.8cm,anchor=center,outer sep=0,
+    name=\tikzmatrixname-\the\mcr-\the\mcc
+}]
+\matrix[row sep=-.5*\pgflinewidth,column sep=-.5*\pgflinewidth,
+   execute at empty cell={%
+       \ifnum1=\mcr\relax%
+           \ifnum1=\mcc\relax\node[border style=black!10!white]{$\cdot$};%
+           \else\node[border style=black!10!white]{$\number\numexpr\the\mcc-1\relax$};\fi
+       \else%
+         \ifnum1=\mcc\relax\node[border style=black!10!white]{$\cdot$};%
+           \node[border style=black!10!white]{$\number\numexpr\the\mcr-1\relax$};%
+         \else%
+           \pgfmathparse{int(abs(\mcr-\mcc))}%
+           \ifnum5=\pgfmathresult\relax\def\temp{white}\else\def\temp{none}\fi%
+           \node[border style=\temp]{\number\numexpr\numexpr\the\mcc-1\relax*\numexpr\the\mcr-1\relax\relax};%
+         \fi%
+       \fi}
+] (a) {
+&&&&&&&&&&&\\
+&&&&&&&&&&&\\
+&&&&&&&&&&&\\
+&&&&&&&&&&&\\
+&&&&&&&&&&&\\
+&&&&&&&&&&&\\
+&&&&&&&&&&&\\
+&&&&&&&&&&&\\
+&&&&&&&&&&&\\
+&&&&&&&&&&&\\
+&&&&&&&&&&&\\
+&&&&&&&&&&&\\
+};
+\end{tikzpicture}
+
+Die perfekte Beherrschung des \enquote{$1 \times 1$} ist \textbf{notwendige Voraussetzung} für sicheres und schnelles schriftliches Rechnen.
+
+\chapter{Schriftlich Rechnen}
+
+Nochmal: Die perfekte Beherrschung des \enquote{$1 \times 1$} ist \textbf{notwendige Voraussetzung} für sicheres und schnelles schriftliches Rechnen!
+
+\begin{figure}
+  \centering
+  \begin{tikzpicture}
+    %\draw[step=1mm, line width=0.1mm, black!30!white] (0,0) grid (\width,\hauteur);
+    \draw[step=5mm, line width=0.2mm, black!40!white] (0,0) grid (\width,\hauteur);
+    %\draw[step=5cm, line width=0.5mm, black!50!white] (0,0) grid (\width,\hauteur);
+    %\draw[step=1cm, line width=0.3mm, black!90!white] (0,0) grid (\width,\hauteur);
+
+    \node at (0.75cm, 11.75cm) {1};
+    \node at (1.25cm, 11.75cm) {2};
+    \node at (1.75cm, 11.75cm) {3};
+    \node at (2.25cm, 11.75cm) {4};
+    \node at (2.75cm, 11.75cm) {5};
+    \node at (0.25cm, 11.25cm) {+};
+    \node at (1.25cm, 11.25cm) {6};
+    \node at (1.75cm, 11.25cm) {7};
+    \node at (2.25cm, 11.25cm) {8};
+    \node at (2.75cm, 11.25cm) {9};
+
+    \draw (0.2cm,10.7cm) -- (3cm,10.7cm);
+
+    \node at (2.75cm, 10.25cm) {4};
+    \node at (2.35cm, 10.8cm) {\tiny 1};
+    \node at (2.25cm, 10.25cm) {3};
+    \node at (1.85cm, 10.8cm) {\tiny 1};
+    \node at (1.75cm, 10.25cm) {1};
+    \node at (1.35cm, 10.8cm) {\tiny 1};
+    \node at (1.25cm, 10.25cm) {9};
+    \node at (0.75cm, 10.25cm) {1};
+
+    \node at (5.75cm, 11.75cm) {};
+    \node at (6.25cm, 11.75cm) {8};
+    \node at (6.75cm, 11.75cm) {3};
+    \node at (7.25cm, 11.75cm) {3};
+    \node at (7.75cm, 11.75cm) {3};
+    \node at (8.25cm, 11.75cm) {7};
+
+    \node at (5.25cm, 11.25cm) {+};
+    \node at (5.75cm, 11.25cm) {};
+    \node at (6.25cm, 11.25cm) {4};
+    \node at (6.75cm, 11.25cm) {7};
+    \node at (7.25cm, 11.25cm) {4};
+    \node at (7.75cm, 11.25cm) {6};
+    \node at (8.25cm, 11.25cm) {6};
+
+    \node at (5.25cm, 10.75cm) {+};
+    \node at (5.75cm, 10.75cm) {};
+    \node at (6.25cm, 10.75cm) {4};
+    \node at (6.75cm, 10.75cm) {3};
+    \node at (7.25cm, 10.75cm) {8};
+    \node at (7.75cm, 10.75cm) {9};
+    \node at (8.25cm, 10.75cm) {5};
+
+    \node at (5.25cm, 10.25cm) {+};
+    \node at (5.75cm, 10.25cm) {};
+    \node at (6.25cm, 10.25cm) {1};
+    \node at (6.75cm, 10.25cm) {8};
+    \node at (7.25cm, 10.25cm) {7};
+    \node at (7.75cm, 10.25cm) {9};
+    \node at (8.25cm, 10.25cm) {1};
+
+    \node at (5.25cm, 9.75cm) {+};
+    \node at (5.75cm, 9.75cm) {};
+    \node at (6.25cm, 9.75cm) {6};
+    \node at (6.75cm, 9.75cm) {8};
+    \node at (7.25cm, 9.75cm) {9};
+    \node at (7.75cm, 9.75cm) {1};
+    \node at (8.25cm, 9.75cm) {4};
+
+    \node at (5.25cm, 9.25cm) {+};
+    \node at (5.75cm, 9.25cm) {};
+    \node at (6.25cm, 9.25cm) {3};
+    \node at (6.75cm, 9.25cm) {6};
+    \node at (7.25cm, 9.25cm) {0};
+    \node at (7.75cm, 9.25cm) {9};
+    \node at (8.25cm, 9.25cm) {2};
+
+    \node at (5.25cm, 8.75cm) {+};
+    \node at (5.75cm, 8.75cm) {};
+    \node at (6.25cm, 8.75cm) {};
+    \node at (6.75cm, 8.75cm) {};
+    \node at (7.25cm, 8.75cm) {6};
+    \node at (7.75cm, 8.75cm) {4};
+    \node at (8.25cm, 8.75cm) {4};
+
+    \node at (5.25cm, 8.25cm) {+};
+    \node at (5.75cm, 8.25cm) {};
+    \node at (6.25cm, 8.25cm) {1};
+    \node at (6.75cm, 8.25cm) {7};
+    \node at (7.25cm, 8.25cm) {6};
+    \node at (7.75cm, 8.25cm) {6};
+    \node at (8.25cm, 8.25cm) {9};
+
+    \node at (5.25cm, 7.75cm) {+};
+    \node at (5.75cm, 7.75cm) {};
+    \node at (6.25cm, 7.75cm) {};
+    \node at (6.75cm, 7.75cm) {};
+    \node at (7.25cm, 7.75cm) {8};
+    \node at (7.75cm, 7.75cm) {4};
+    \node at (8.25cm, 7.75cm) {9};
+
+    \node at (5.25cm, 7.25cm) {+};
+    \node at (5.75cm, 7.25cm) {};
+    \node at (6.25cm, 7.25cm) {};
+    \node at (6.75cm, 7.25cm) {};
+    \node at (7.25cm, 7.25cm) {8};
+    \node at (7.75cm, 7.25cm) {2};
+    \node at (8.25cm, 7.25cm) {5};
+
+    \node at (5.25cm, 6.75cm) {+};
+    \node at (5.75cm, 6.75cm) {};
+    \node at (6.25cm, 6.75cm) {2};
+    \node at (6.75cm, 6.75cm) {3};
+    \node at (7.25cm, 6.75cm) {5};
+    \node at (7.75cm, 6.75cm) {5};
+    \node at (8.25cm, 6.75cm) {9};
+
+    \node at (5.25cm, 6.25cm) {+};
+    \node at (5.75cm, 6.25cm) {};
+    \node at (6.25cm, 6.25cm) {2};
+    \node at (6.75cm, 6.25cm) {9};
+    \node at (7.25cm, 6.25cm) {4};
+    \node at (7.75cm, 6.25cm) {1};
+    \node at (8.25cm, 6.25cm) {0};
+
+    \node at (5.25cm, 5.75cm) {+};
+    \node at (5.75cm, 5.75cm) {};
+    \node at (6.25cm, 5.75cm) {};
+    \node at (6.75cm, 5.75cm) {};
+    \node at (7.25cm, 5.75cm) {4};
+    \node at (7.75cm, 5.75cm) {2};
+    \node at (8.25cm, 5.75cm) {3};
+
+    \node at (5.25cm, 5.25cm) {+};
+    \node at (5.75cm, 5.25cm) {};
+    \node at (6.25cm, 5.25cm) {2};
+    \node at (6.75cm, 5.25cm) {9};
+    \node at (7.25cm, 5.25cm) {4};
+    \node at (7.75cm, 5.25cm) {0};
+    \node at (8.25cm, 5.25cm) {3};
+
+    \node at (5.25cm, 4.75cm) {+};
+    \node at (5.75cm, 4.75cm) {};
+    \node at (6.25cm, 4.75cm) {6};
+    \node at (6.75cm, 4.75cm) {9};
+    \node at (7.25cm, 4.75cm) {1};
+    \node at (7.75cm, 4.75cm) {0};
+    \node at (8.25cm, 4.75cm) {4};
+
+    \node at (5.25cm, 4.25cm) {+};
+    \node at (5.75cm, 4.25cm) {};
+    \node at (6.25cm, 4.25cm) {4};
+    \node at (6.75cm, 4.25cm) {4};
+    \node at (7.25cm, 4.25cm) {0};
+    \node at (7.75cm, 4.25cm) {2};
+    \node at (8.25cm, 4.25cm) {4};
+
+    \node at (5.25cm, 3.75cm) {+};
+    \node at (5.75cm, 3.75cm) {};
+    \node at (6.25cm, 3.75cm) {};
+    \node at (6.75cm, 3.75cm) {};
+    \node at (7.25cm, 3.75cm) {2};
+    \node at (7.75cm, 3.75cm) {2};
+    \node at (8.25cm, 3.75cm) {0};
+
+    \node at (5.25cm, 3.25cm) {+};
+    \node at (5.75cm, 3.25cm) {};
+    \node at (6.25cm, 3.25cm) {8};
+    \node at (6.75cm, 3.25cm) {2};
+    \node at (7.25cm, 3.25cm) {7};
+    \node at (7.75cm, 3.25cm) {7};
+    \node at (8.25cm, 3.25cm) {1};
+
+    \node at (5.25cm, 2.75cm) {+};
+    \node at (5.75cm, 2.75cm) {};
+    \node at (6.25cm, 2.75cm) {2};
+    \node at (6.75cm, 2.75cm) {3};
+    \node at (7.25cm, 2.75cm) {2};
+    \node at (7.75cm, 2.75cm) {3};
+    \node at (8.25cm, 2.75cm) {9};
+
+    \draw (5.2cm,2.2cm) -- (9cm,2.2cm);
+
+    \node at (5.75cm, 1.75cm) {6};
+    \node at (5.8cm, 2.3cm) {\tiny 6};
+    \node at (6.25cm, 1.75cm) {2};
+    \node at (6.3cm, 2.3cm) {\tiny 9};
+    \node at (6.75cm, 1.75cm) {0};
+    \node at (6.8cm, 2.3cm) {\tiny 9};
+    \node at (7.25cm, 1.75cm) {6};
+    \node at (7.3cm, 2.3cm) {\tiny 8};
+    \node at (7.75cm, 1.75cm) {3};
+    \node at (7.8cm, 2.3cm) {\tiny 8};
+    \node at (8.25cm, 1.75cm) {5};//85
+
+  \end{tikzpicture}
+  \caption{schriftlich addieren}\label{fig:schriftlichAddieren}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \begin{tikzpicture}
+    %\draw[step=1mm, line width=0.1mm, black!30!white] (0,0) grid (\width,\hauteur);
+    \draw[step=5mm, line width=0.2mm, black!40!white] (0,0) grid (\width,\hauteur);
+    %\draw[step=5cm, line width=0.5mm, black!50!white] (0,0) grid (\width,\hauteur);
+    %\draw[step=1cm, line width=0.3mm, black!90!white] (0,0) grid (\width,\hauteur);
+
+    \node at (0.75cm, 11.75cm) {1};
+    \node at (1.25cm, 11.75cm) {2};
+    \node at (1.75cm, 11.75cm) {3};
+    \node at (2.25cm, 11.75cm) {4};
+    \node at (2.75cm, 11.75cm) {5};
+    \node at (0.25cm, 11.25cm) {-};
+    \node at (1.25cm, 11.25cm) {6};
+    \node at (1.75cm, 11.25cm) {7};
+    \node at (2.25cm, 11.25cm) {8};
+    \node at (2.75cm, 11.25cm) {9};
+
+    \draw (0.2cm,10.7cm) -- (3cm,10.7cm);
+
+    \node at (2.75cm, 10.25cm) {6};
+    \node at (2.35cm, 10.8cm) {\tiny 1};
+    \node at (2.25cm, 10.25cm) {5};
+    \node at (1.85cm, 10.8cm) {\tiny 1};
+    \node at (1.75cm, 10.25cm) {5};
+    \node at (1.35cm, 10.8cm) {\tiny 1};
+    \node at (1.25cm, 10.25cm) {5};
+    \node at (0.85cm, 10.8cm) {\tiny 1};
+    \node at (0.75cm, 10.25cm) {};
+
+    \node at (4.75cm, 11.75cm) {};
+    \node at (5.25cm, 11.75cm) {8};
+    \node at (5.75cm, 11.75cm) {3};
+    \node at (6.25cm, 11.75cm) {3};
+    \node at (6.75cm, 11.75cm) {3};
+    \node at (7.25cm, 11.75cm) {7};
+
+    \node at (4.25cm, 11.25cm) {-};
+    \node at (4.75cm, 11.25cm) {};
+    \node at (5.25cm, 11.25cm) {4};
+    \node at (5.75cm, 11.25cm) {7};
+    \node at (6.25cm, 11.25cm) {4};
+    \node at (6.75cm, 11.25cm) {6};
+    \node at (7.25cm, 11.25cm) {6};
+
+    \node at (4.25cm, 10.75cm) {-};
+    \node at (4.75cm, 10.75cm) {};
+    \node at (5.25cm, 10.75cm) {4};
+    \node at (5.75cm, 10.75cm) {3};
+    \node at (6.25cm, 10.75cm) {8};
+    \node at (6.75cm, 10.75cm) {9};
+    \node at (7.25cm, 10.75cm) {5};
+
+    \node at (4.25cm, 10.25cm) {-};
+    \node at (4.75cm, 10.25cm) {};
+    \node at (5.25cm, 10.25cm) {1};
+    \node at (5.75cm, 10.25cm) {8};
+    \node at (6.25cm, 10.25cm) {7};
+    \node at (6.75cm, 10.25cm) {9};
+    \node at (7.25cm, 10.25cm) {1};
+
+    \node at (4.25cm, 9.75cm) {-};
+    \node at (4.75cm, 9.75cm) {};
+    \node at (5.25cm, 9.75cm) {6};
+    \node at (5.75cm, 9.75cm) {8};
+    \node at (6.25cm, 9.75cm) {9};
+    \node at (6.75cm, 9.75cm) {1};
+    \node at (7.25cm, 9.75cm) {4};
+
+    \node at (4.25cm, 9.25cm) {-};
+    \node at (4.75cm, 9.25cm) {};
+    \node at (5.25cm, 9.25cm) {3};
+    \node at (5.75cm, 9.25cm) {6};
+    \node at (6.25cm, 9.25cm) {0};
+    \node at (6.75cm, 9.25cm) {9};
+    \node at (7.25cm, 9.25cm) {2};
+
+    \node at (4.25cm, 8.75cm) {-};
+    \node at (4.75cm, 8.75cm) {};
+    \node at (5.25cm, 8.75cm) {};
+    \node at (5.75cm, 8.75cm) {};
+    \node at (6.25cm, 8.75cm) {6};
+    \node at (6.75cm, 8.75cm) {4};
+    \node at (7.25cm, 8.75cm) {4};
+
+    \node at (4.25cm, 8.25cm) {-};
+    \node at (4.75cm, 8.25cm) {};
+    \node at (5.25cm, 8.25cm) {1};
+    \node at (5.75cm, 8.25cm) {7};
+    \node at (6.25cm, 8.25cm) {6};
+    \node at (6.75cm, 8.25cm) {6};
+    \node at (7.25cm, 8.25cm) {9};
+
+    \node at (4.25cm, 7.75cm) {-};
+    \node at (4.75cm, 7.75cm) {};
+    \node at (5.25cm, 7.75cm) {};
+    \node at (5.75cm, 7.75cm) {};
+    \node at (6.25cm, 7.75cm) {8};
+    \node at (6.75cm, 7.75cm) {4};
+    \node at (7.25cm, 7.75cm) {9};
+
+    \node at (4.25cm, 7.25cm) {-};
+    \node at (4.75cm, 7.25cm) {};
+    \node at (5.25cm, 7.25cm) {};
+    \node at (5.75cm, 7.25cm) {};
+    \node at (6.25cm, 7.25cm) {8};
+    \node at (6.75cm, 7.25cm) {2};
+    \node at (7.25cm, 7.25cm) {5};
+
+    \node at (4.25cm, 6.75cm) {-};
+    \node at (4.75cm, 6.75cm) {};
+    \node at (5.25cm, 6.75cm) {2};
+    \node at (5.75cm, 6.75cm) {3};
+    \node at (6.25cm, 6.75cm) {5};
+    \node at (6.75cm, 6.75cm) {5};
+    \node at (7.25cm, 6.75cm) {9};
+
+    \node at (4.25cm, 6.25cm) {-};
+    \node at (4.75cm, 6.25cm) {};
+    \node at (5.25cm, 6.25cm) {2};
+    \node at (5.75cm, 6.25cm) {9};
+    \node at (6.25cm, 6.25cm) {4};
+    \node at (6.75cm, 6.25cm) {1};
+    \node at (7.25cm, 6.25cm) {0};
+
+    \node at (4.25cm, 5.75cm) {-};
+    \node at (4.75cm, 5.75cm) {};
+    \node at (5.25cm, 5.75cm) {};
+    \node at (5.75cm, 5.75cm) {};
+    \node at (6.25cm, 5.75cm) {4};
+    \node at (6.75cm, 5.75cm) {2};
+    \node at (7.25cm, 5.75cm) {3};
+
+    \node at (4.25cm, 5.25cm) {-};
+    \node at (4.75cm, 5.25cm) {};
+    \node at (5.25cm, 5.25cm) {2};
+    \node at (5.75cm, 5.25cm) {9};
+    \node at (6.25cm, 5.25cm) {4};
+    \node at (6.75cm, 5.25cm) {0};
+    \node at (7.25cm, 5.25cm) {3};
+
+    \node at (4.25cm, 4.75cm) {-};
+    \node at (4.75cm, 4.75cm) {};
+    \node at (5.25cm, 4.75cm) {6};
+    \node at (5.75cm, 4.75cm) {9};
+    \node at (6.25cm, 4.75cm) {1};
+    \node at (6.75cm, 4.75cm) {0};
+    \node at (7.25cm, 4.75cm) {4};
+
+    \node at (4.25cm, 4.25cm) {-};
+    \node at (4.75cm, 4.25cm) {};
+    \node at (5.25cm, 4.25cm) {4};
+    \node at (5.75cm, 4.25cm) {4};
+    \node at (6.25cm, 4.25cm) {0};
+    \node at (6.75cm, 4.25cm) {2};
+    \node at (7.25cm, 4.25cm) {4};
+
+    \node at (4.25cm, 3.75cm) {-};
+    \node at (4.75cm, 3.75cm) {};
+    \node at (5.25cm, 3.75cm) {};
+    \node at (5.75cm, 3.75cm) {};
+    \node at (6.25cm, 3.75cm) {2};
+    \node at (6.75cm, 3.75cm) {2};
+    \node at (7.25cm, 3.75cm) {0};
+
+    \node at (4.25cm, 3.25cm) {-};
+    \node at (4.75cm, 3.25cm) {};
+    \node at (5.25cm, 3.25cm) {8};
+    \node at (5.75cm, 3.25cm) {2};
+    \node at (6.25cm, 3.25cm) {7};
+    \node at (6.75cm, 3.25cm) {7};
+    \node at (7.25cm, 3.25cm) {1};
+
+    \node at (4.25cm, 2.75cm) {-};
+    \node at (4.75cm, 2.75cm) {};
+    \node at (5.25cm, 2.75cm) {2};
+    \node at (5.75cm, 2.75cm) {3};
+    \node at (6.25cm, 2.75cm) {2};
+    \node at (6.75cm, 2.75cm) {3};
+    \node at (7.25cm, 2.75cm) {9};
+
+    \draw (4.2cm,2.2cm) -- (8cm,2.2cm);
+
+    \node at (4.75cm, 1.75cm) {};
+    \node at (4.8cm, 2.3cm) {\tiny };
+    \node at (5.25cm, 1.75cm) {};
+    \node at (5.3cm, 2.3cm) {\tiny };
+    \node at (5.75cm, 1.75cm) {};
+    \node at (5.8cm, 2.3cm) {\tiny };
+    \node at (6.25cm, 1.75cm) {};
+    \node at (6.3cm, 2.3cm) {\tiny };
+    \node at (6.75cm, 1.75cm) {};
+    \node at (6.8cm, 2.3cm) {\tiny };
+    \node at (7.25cm, 1.75cm) {?};
+
+    \node at (8.75cm, 11.75cm) {};
+    \node at (9.25cm, 11.75cm) {8};
+    \node at (9.75cm, 11.75cm) {3};
+    \node at (10.25cm, 11.75cm) {3};
+    \node at (10.75cm, 11.75cm) {3};
+    \node at (11.25cm, 11.75cm) {7};
+
+    \node at (8.25cm, 11.25cm) {-};
+    \node at (8.75cm, 11.25cm) {(};
+    \node at (8.75cm, 11.25cm) {};
+    \node at (9.25cm, 11.25cm) {4};
+    \node at (9.75cm, 11.25cm) {7};
+    \node at (10.25cm, 11.25cm) {4};
+    \node at (10.75cm, 11.25cm) {6};
+    \node at (11.25cm, 11.25cm) {6};
+
+    \node at (8.25cm, 10.75cm) {+};
+    \node at (8.75cm, 10.75cm) {};
+    \node at (9.25cm, 10.75cm) {4};
+    \node at (9.75cm, 10.75cm) {3};
+    \node at (10.25cm, 10.75cm) {8};
+    \node at (10.75cm, 10.75cm) {9};
+    \node at (11.25cm, 10.75cm) {5};
+
+    \node at (8.25cm, 10.25cm) {+};
+    \node at (8.75cm, 10.25cm) {};
+    \node at (9.25cm, 10.25cm) {1};
+    \node at (9.75cm, 10.25cm) {8};
+    \node at (10.25cm, 10.25cm) {7};
+    \node at (10.75cm, 10.25cm) {9};
+    \node at (11.25cm, 10.25cm) {1};
+
+    \node at (8.25cm, 9.75cm) {+};
+    \node at (8.75cm, 9.75cm) {};
+    \node at (9.25cm, 9.75cm) {6};
+    \node at (9.75cm, 9.75cm) {8};
+    \node at (10.25cm, 9.75cm) {9};
+    \node at (10.75cm, 9.75cm) {1};
+    \node at (11.25cm, 9.75cm) {4};
+
+    \node at (8.25cm, 9.25cm) {+};
+    \node at (8.75cm, 9.25cm) {};
+    \node at (9.25cm, 9.25cm) {3};
+    \node at (9.75cm, 9.25cm) {6};
+    \node at (10.25cm, 9.25cm) {0};
+    \node at (10.75cm, 9.25cm) {9};
+    \node at (11.25cm, 9.25cm) {2};
+
+    \node at (8.25cm, 8.75cm) {+};
+    \node at (8.75cm, 8.75cm) {};
+    \node at (9.25cm, 8.75cm) {};
+    \node at (9.75cm, 8.75cm) {};
+    \node at (10.25cm, 8.75cm) {6};
+    \node at (10.75cm, 8.75cm) {4};
+    \node at (11.25cm, 8.75cm) {4};
+
+    \node at (8.25cm, 8.25cm) {+};
+    \node at (8.75cm, 8.25cm) {};
+    \node at (9.25cm, 8.25cm) {1};
+    \node at (9.75cm, 8.25cm) {7};
+    \node at (10.25cm, 8.25cm) {6};
+    \node at (10.75cm, 8.25cm) {6};
+    \node at (11.25cm, 8.25cm) {9};
+
+    \node at (8.25cm, 7.75cm) {+};
+    \node at (8.75cm, 7.75cm) {};
+    \node at (9.25cm, 7.75cm) {};
+    \node at (9.75cm, 7.75cm) {};
+    \node at (10.25cm, 7.75cm) {8};
+    \node at (10.75cm, 7.75cm) {4};
+    \node at (11.25cm, 7.75cm) {9};
+
+    \node at (8.25cm, 7.25cm) {+};
+    \node at (8.75cm, 7.25cm) {};
+    \node at (9.25cm, 7.25cm) {};
+    \node at (9.75cm, 7.25cm) {};
+    \node at (10.25cm, 7.25cm) {8};
+    \node at (10.75cm, 7.25cm) {2};
+    \node at (11.25cm, 7.25cm) {5};
+
+    \node at (8.25cm, 6.75cm) {+};
+    \node at (8.75cm, 6.75cm) {};
+    \node at (9.25cm, 6.75cm) {2};
+    \node at (9.75cm, 6.75cm) {3};
+    \node at (10.25cm, 6.75cm) {5};
+    \node at (10.75cm, 6.75cm) {5};
+    \node at (11.25cm, 6.75cm) {9};
+
+    \node at (8.25cm, 6.25cm) {+};
+    \node at (8.75cm, 6.25cm) {};
+    \node at (9.25cm, 6.25cm) {2};
+    \node at (9.75cm, 6.25cm) {9};
+    \node at (10.25cm, 6.25cm) {4};
+    \node at (10.75cm, 6.25cm) {1};
+    \node at (11.25cm, 6.25cm) {0};
+
+    \node at (8.25cm, 5.75cm) {+};
+    \node at (8.75cm, 5.75cm) {};
+    \node at (9.25cm, 5.75cm) {};
+    \node at (9.75cm, 5.75cm) {};
+    \node at (10.25cm, 5.75cm) {4};
+    \node at (10.75cm, 5.75cm) {2};
+    \node at (11.25cm, 5.75cm) {3};
+
+    \node at (8.25cm, 5.25cm) {+};
+    \node at (8.75cm, 5.25cm) {};
+    \node at (9.25cm, 5.25cm) {2};
+    \node at (9.75cm, 5.25cm) {9};
+    \node at (10.25cm, 5.25cm) {4};
+    \node at (10.75cm, 5.25cm) {0};
+    \node at (11.25cm, 5.25cm) {3};
+
+    \node at (8.25cm, 4.75cm) {+};
+    \node at (8.75cm, 4.75cm) {};
+    \node at (9.25cm, 4.75cm) {6};
+    \node at (9.75cm, 4.75cm) {9};
+    \node at (10.25cm, 4.75cm) {1};
+    \node at (10.75cm, 4.75cm) {0};
+    \node at (11.25cm, 4.75cm) {4};
+
+    \node at (8.25cm, 4.25cm) {+};
+    \node at (8.75cm, 4.25cm) {};
+    \node at (9.25cm, 4.25cm) {4};
+    \node at (9.75cm, 4.25cm) {4};
+    \node at (10.25cm, 4.25cm) {0};
+    \node at (10.75cm, 4.25cm) {2};
+    \node at (11.25cm, 4.25cm) {4};
+
+    \node at (8.25cm, 3.75cm) {+};
+    \node at (8.75cm, 3.75cm) {};
+    \node at (9.25cm, 3.75cm) {};
+    \node at (9.75cm, 3.75cm) {};
+    \node at (10.25cm, 3.75cm) {2};
+    \node at (10.75cm, 3.75cm) {2};
+    \node at (11.25cm, 3.75cm) {0};
+
+    \node at (8.25cm, 3.25cm) {+};
+    \node at (8.75cm, 3.25cm) {};
+    \node at (9.25cm, 3.25cm) {8};
+    \node at (9.75cm, 3.25cm) {2};
+    \node at (10.25cm, 3.25cm) {7};
+    \node at (10.75cm, 3.25cm) {7};
+    \node at (11.25cm, 3.25cm) {1};
+
+    \node at (8.25cm, 2.75cm) {+};
+    \node at (8.75cm, 2.75cm) {};
+    \node at (9.25cm, 2.75cm) {2};
+    \node at (9.75cm, 2.75cm) {3};
+    \node at (10.25cm, 2.75cm) {2};
+    \node at (10.75cm, 2.75cm) {3};
+    \node at (11.25cm, 2.75cm) {9};
+    \node at (11.75cm, 2.75cm) {)};
+
+    \draw (8.2cm,2.2cm) -- (11.9cm,2.2cm);
+
+    \node at (8.75cm, 1.75cm) {5};
+    \node at (8.8cm, 2.3cm) {\tiny 5};
+    \node at (9.25cm, 1.75cm) {3};
+    \node at (9.3cm, 2.3cm) {\tiny 8};
+    \node at (9.75cm, 1.75cm) {7};
+    \node at (9.8cm, 2.3cm) {\tiny 9};
+    \node at (10.25cm, 1.75cm) {2};
+    \node at (10.3cm, 2.3cm) {\tiny 7};
+    \node at (10.75cm, 1.75cm) {9};
+    \node at (10.8cm, 2.3cm) {\tiny 7};
+    \node at (11.25cm, 1.75cm) {8};
+
+    \node at (8.25cm, 1.25cm) {-};
+    \node at (8.75cm, 1.25cm) {};
+    \node at (9.25cm, 1.25cm) {8};
+    \node at (9.75cm, 1.25cm) {3};
+    \node at (10.25cm, 1.25cm) {3};
+    \node at (10.75cm, 1.25cm) {3};
+    \node at (11.25cm, 1.25cm) {7};
+
+    \draw (8.2cm,0.7cm) -- (11.9cm,0.7cm);
+
+    \node at (8.25cm, 0.25cm) {-};
+    \node at (8.75cm, 0.25cm) {4};
+    \node at (8.8cm, 0.8cm) {\tiny 1};
+    \node at (9.25cm, 0.25cm) {5};
+    \node at (9.3cm, 0.8cm) {\tiny };
+    \node at (9.75cm, 0.25cm) {3};
+    \node at (9.8cm, 0.8cm) {\tiny 1};
+    \node at (10.25cm, 0.25cm) {9};
+    \node at (10.3cm, 0.8cm) {\tiny };
+    \node at (10.75cm, 0.25cm) {6};
+    \node at (10.8cm, 0.8cm) {\tiny };
+    \node at (11.25cm, 0.25cm) {1};
+
+  \end{tikzpicture}
+  \caption{schriftlich subtrahieren}\label{fig:schriftlichSubtrahieren}
+\end{figure}
+
+
+
+\chapter{Bruchrechnung}\index{Bruchrechnung}
+
+\section{Motivation}
+
+Mit Brüchen zu rechnen vereinfacht das Leben mit Mathematik sehr. Natürliche Zahlen sind uns eben natürlich. Ein Ganzes, ein Halbes oder ein Drittel von etwas, einer Pizza z.B., ist uns unmittelbar verständlich. $33,\overline{3}\%$ sind es nicht und machen erst durch den Gedanken \enquote{$33,\overline{3}$\% \textbf{ist} ein Drittel} gedanklich Sinn. Brüche sind einfach zu begreifen, Dezimalentwicklungen nicht. Unter $0,\overline{142857}$ kann sich Niemand etwas vorstellen, der nicht weiß, dass das $\frac{1}{7}$ ist.
+
+
+\section{Grundlagen}\index{Bruchrechnung!Grundlagen}\label{Bruchrechnung}
+
+Wir sprechen jeweils über die grauen Teile/ Flächen relativ zur gesamten Fläche, dem ganzen Kreis.
+
+\begin{longtable}{|m{0.3\linewidth}|m{0.6\linewidth}|}
+\hline
+$
+    \begin{tikzpicture}
+        \filldraw[fill=gray!20] circle(0.75cm);
+    \end{tikzpicture}
+$
+& Das ist eine Pizza. Das ist eine ganze Pizza. Das ist ein Ganzes. Das ist ein Stück einer Pizza, die aus einem Stück besteht. Es ist 1. Es ist $\frac{1}{1}$.\\
+\hline
+$
+    \begin{tikzpicture}[scale=0.5, .style={fontsize=\footnotesize}]
+            \filldraw[fill=gray!20] (0,0) circle(0.75cm);
+            \draw (1.1,0) node{+};
+            \filldraw[fill=gray!20] (2.2,0) circle(0.75cm);
+            \draw (3.3,0) node{=};
+            \filldraw[fill=gray!20] (4.4,0) circle(0.75cm);
+            \filldraw[fill=gray!20] (5.9,0) circle(0.75cm);
+    \end{tikzpicture}
+$
+& Das sind zwei Ganze (Kreise, Pizzen, Dinge, ...). Ein Kreis war $\frac{1}{1}$. Zwei sind $\frac{1}{1}+\frac{1}{1}=\frac{2}{1} = 2$ oder $2 \cdot \frac{1}{1} = \frac{2}{1} = 2$.\\
+\hline
+$
+    \begin{tikzpicture}
+            \filldraw[fill=gray!20] (0,0) circle(0.75cm);
+            \draw (0, -0.75) -- (0,0.75);
+    \end{tikzpicture}
+$
+& Das ist immer noch ein Kreis. Dass er durchgeschnitten ist ändert das nicht. Es sind zwei (gleich große) Teile eines Kreises aus zwei Teilen. Das sind $\frac{2}{2}$. Also sind $\frac{2}{2} = \frac{1}{1} = 1$.\\
+\hline
+$
+    \begin{tikzpicture}[radius=7.5mm, delta angle=120]
+        \filldraw[fill=black!10!white, draw=black!70!white, rotate=90]
+            (0,0) -- (7.5mm, 0) arc (0:180:7.5mm) -- cycle;
+        \filldraw[fill=white, draw=black!70!white, rotate=270]
+            (0,0) -- (7.5mm, 0) arc (0:180:7.5mm) -- cycle;
+    \end{tikzpicture}
+$
+& Das ist immer noch ein Kreis. Dass er durchgeschnitten ist ändert das nicht. Es ist ein Teil von zwei (gleich großen) Teilen eines Kreises aus zwei Teilen. Das sind $\frac{1}{2}$.\\
+\hline
+$
+    \begin{tikzpicture}[radius=7.5mm, delta angle=120]
+        \filldraw[fill=black!10!white, draw=black!70!white]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+        \filldraw[fill=white, draw=black!70!white, rotate=120]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+        \filldraw[fill=white, draw=black!70!white, rotate=240]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+    \end{tikzpicture}
+$
+& Das ist immer noch ein Kreis. Dass er durchgeschnitten ist ändert das nicht. Es ist ein Teil von drei (gleich großen) Teile eines Kreises aus drei Teilen. Das sind $\frac{1}{3}$.\\\hline
+$
+    \begin{tikzpicture}[radius=7.5mm, delta angle=120]
+        \filldraw[fill=black!10!white, draw=black!70!white]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+        \filldraw[fill=black!10!white, draw=black!70!white, rotate=120]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+        \filldraw[fill=white, draw=black!70!white, rotate=240]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+    \end{tikzpicture}
+$
+& Das ist immer noch ein Kreis. Dass er durchgeschnitten ist ändert das nicht. Es sind zwei (gleich große) Teile von drei (gleich großen) Teilen eines Kreises aus drei Teilen. Das sind $\frac{2}{3}$.\\\hline
+$
+    \begin{tikzpicture}[baseline=-1mm,scale=0.5, .style={fontsize=\footnotesize}]
+        \filldraw[fill=black!10!white, draw=black!70!white]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+        \filldraw[fill=white, draw=black!70!white, rotate=120]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+        \filldraw[fill=white, draw=black!70!white, rotate=240]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+    \end{tikzpicture}
+    +
+    \begin{tikzpicture}[baseline=-1mm,scale=0.5, .style={fontsize=\footnotesize}]
+        \filldraw[fill=white, draw=black!70!white]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+        \filldraw[fill=black!10!white, draw=black!70!white, rotate=120]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+        \filldraw[fill=black!10!white, draw=black!70!white, rotate=240]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+    \end{tikzpicture}
+    =
+    \begin{tikzpicture}[baseline=-1mm,scale=0.5, .style={fontsize=\footnotesize}]
+        \filldraw[fill=black!10!white, draw=black!70!white]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+        \filldraw[fill=black!10!white, draw=black!70!white, rotate=120]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+        \filldraw[fill=black!10!white, draw=black!70!white, rotate=240]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+    \end{tikzpicture}
+$
+& S.o. $\frac{1}{3} + \frac{2}{3} = \frac{3}{3} = 1$. Gesprochen wir dies als \enquote{ein Drittel plus zwei Drittel gleich drei Drittel gleich eins}.\\\hline
+$
+    \begin{tikzpicture}[baseline=-1mm,scale=0.5, .style={fontsize=\footnotesize}]
+        \filldraw[fill=black!10!white, draw=black!70!white]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+        \filldraw[fill=white, draw=black!70!white, rotate=120]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+        \filldraw[fill=white, draw=black!70!white, rotate=240]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+    \end{tikzpicture}
+    +
+    \begin{tikzpicture}[baseline=-1mm,scale=0.5, .style={fontsize=\footnotesize}]
+        \filldraw[fill=black!10!white, draw=black!70!white, rotate=120]
+            (0,0) -- (7.5mm, 0) arc (0:60:7.5mm) -- cycle;
+        \filldraw[fill=black!10!white, draw=black!70!white, rotate=180]
+            (0,0) -- (7.5mm, 0) arc (0:60:7.5mm) -- cycle;
+        \filldraw[fill=white, draw=black!70!white]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+        \filldraw[fill=white, draw=black!70!white, rotate=240]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+    \end{tikzpicture}
+    =
+    \begin{tikzpicture}[baseline=-1mm,scale=0.5, .style={fontsize=\footnotesize}]
+        \filldraw[fill=black!10!white, draw=black!70!white, rotate=120]
+            (0,0) -- (7.5mm, 0) arc (0:60:7.5mm) -- cycle;
+        \filldraw[fill=black!10!white, draw=black!70!white, rotate=180]
+            (0,0) -- (7.5mm, 0) arc (0:60:7.5mm) -- cycle;
+        \filldraw[fill=black!10!white, draw=black!70!white]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+        \filldraw[fill=white, draw=black!70!white, rotate=240]
+            (0,0) -- (7.5mm, 0) arc (0:120:7.5mm) -- cycle;
+    \end{tikzpicture}
+$ & $\frac{1}{3} + \frac{2}{6} = \frac{2}{3}$ und $\frac{2}{6} = \frac{1}{3}$\\\hline
+\end{longtable}
+
+Die Zahl über dem Bruchstrich nennen wir \enquote{\textbf{Zähler}}, die Zahl unter dem Bruchstrich \enquote{\textbf{Nenner}}. Wir lesen Brüche als $\frac{1}{2}$\enquote{ein Halb} (oder \enquote{ein Halbes}), $\frac{1}{3}$ als \enquote{ein Drittel}, $\frac{1}{4}$ als \enquote{ein Viertel}, $\frac{1}{12}$ als \enquote{ein Zwölftel}, $\frac{13}{1000}$ als \enquote{dreizehn Tausendstel}. Wird der Bruch nicht als Nomen (der Zahl) verwendet, sondern als adverbiale Bestimmung der Anzahl eines benannten Etwas, wie in \enquote{dreiviertel Pizza}, dann wird klein und mit den unter Numeralia (s. \ref{numeralia}) Regeln zusammen oder getrennt geschrieben. Da wir solche Zahlen stets mit Ziffern schreiben, und beim Lesen/ Sprechen Groß- und Kleinschreibung und Trennungen wenig interessant sind, ist das nicht besonders wichtig. Wir machen einen großen Sprung und geben die Rechenregeln der Bruchrechnung an. Keine Angst, wir kehren danach sofort zu visualisierten Beispielen zurück und nehmen uns alle Zeit der Welt um an dieser wichtigen Stellen niemanden zu verlieren.
+
+\section{Rechenregeln}
+
+\begin{equation}
+    \frac{a}{c} + \frac{b}{c} = \frac{a+b}{c}
+\end{equation}
+
+\begin{equation}
+    \frac{a}{c} - \frac{b}{c} = \frac{a-b}{c}
+\end{equation}
+
+\begin{equation}
+    \frac{a}{c} \cdot \frac{b}{d} = \frac{a b}{c d}
+\end{equation}
+
+Wir dividieren durch Brüche wir indem wir mit dem \textbf{Kehrwert} multiplizieren.
+
+\begin{equation}\label{dividieren durch multiplizieren mit Kehrwert}
+    \frac{a}{c} \div \frac{b}{d} = \frac{a}{c} \cdot \frac{d}{b} = \frac{a d}{b c}
+\end{equation}
+
+Brüche deren \textbf{Zähler} und \textbf{Nenner} einen gemeinsamen \textbf{Teiler} haben kann man \textbf{kürzen}.
+
+\begin{equation}
+    \frac{n a}{n b} = \frac{a}{b}
+\end{equation}
+
+Wir sagen \enquote{$\frac{n a}{n b}$ lässt sich mit $n$ kürzen und ist als \textbf{gekürzter Bruch} $\frac{a}{b}$}.
+
+\begin{beispiel}
+    Der Bruch $r=\frac{2}{6}$ lässt sich kürzen, denn $2$ und $6$ haben den \textbf{gemeinsamen Teiler} $2$. $\frac{2}{6} = \frac{1}{3}$.
+\end{beispiel}
+
+Brüche deren \textbf{Zähler} größer als ihr \textbf{Nenner} ist können als \textbf{gemischter Bruch} geschrieben werden.
+
+\begin{equation}
+    \frac{a}{b} = \left\lfloor\frac{a}{b}\right\rfloor \frac{a-b \left\lfloor\frac{a}{b}\right\rfloor}{b}\footnote{$\left\lfloor \frac{a}{b} \right\rfloor$ bedeutet das auf die nächst kleinere ganze Zahl \textbf{abgerundete} Ergebnis von  $a \div b$. $\frac{5}{2} = 2,5$. $\left\lfloor 2,5 \right\rfloor = 2$. Also $\left\lfloor\frac{5}{2} \right\rfloor = 2$.}
+\end{equation}
+
+\begin{beispiel}
+    $\frac{13}{2} = 6 \frac{1}{2}$
+\end{beispiel}
+
+
+\section{Prozentrechnung}\label{Prozentrechnung}\index{Prozentrechnung}
+
+Wir betrachten \enquote{Prozentrechnung} nicht als eigenes (Haupt-)Thema. \enquote{Prozentrechnung} ist einfach Bruchrechnung mit Hundertsteln.
+
+\begin{eqnarray}
+% \nonumber to remove numbering (before each equation)
+  \text{\textbf{Grundwert}} (GW) \cdot \text{\textbf{Prozentsatz}} (PS) &=& \text{\textbf{Prozentwert}} (PW)\\
+  PS &=& \frac{PW}{GW} \\
+  GW &=& \frac{PW}{PS}
+\end{eqnarray}
+
+Beim Rechnen mit Geld sind \textbf{Kapital} und \textbf{Guthaben}\footnote{sowie \textbf{Schulden} als negatives \textbf{Guthaben}} Synonyme für \textbf{Grundwert}, \textbf{Zinssatz} für \textbf{Prozentsatz} und \textbf{Zinsen} für \textbf{Prozentwert}. Außerdem ist \textbf{Ist} synonym mit positivem \textbf{Guthaben} und \textbf{Soll} mit negativem \textbf{Guthaben} (\textbf{Schulden}).
+
+\begin{beispiel}
+    Zu bestimmen sei wie viel Gramm die 23 Prozent Zucker eines 35 Gramm Schokolandenriegels sind.
+    \begin{eqnarray}
+    % \nonumber to remove numbering (before each equation)
+      Prozentwert &=& Grundwert \cdot Prozentsatz \\
+       &=& 35g \cdot \frac{7}{100} \\
+       &=& \frac{35}{100}g\\
+       &=& 0,35g
+    \end{eqnarray}
+\end{beispiel}
+
+
+\chapter{Term Replacement Systems (TRS)}\label{TRS}\index{TRS}
+
+Um effizient Mathematik zu betreiben ist eine nützliche Sichtweise das Rechnen als System zu verstehen in dem Ausdrücke durch anders geformte Ausdrücke ersetzt werden können, ohne den ursprünglichen Ausdruck (wertmäßig) zu verändern. Insbesondere benutzen wir \textbf{Formeln} und ersetzen die in ihnen enthaltenen allgemeinen \textbf{Variablen} durch konkrete Werte (\textbf{einsetzen}), wodurch wir konkrete Ergebnisse \textbf{ausrechnen} können.
+
+
+\section{Operatorrangfolge}
+
+Die Regel, die in deutschen (Grundschulen) gelehrt wird lautet \enquote{Punkt- vor Strichrechnung}. D.h. \textbf{Multiplikation} und \textbf{Division} werden vor \textbf{Addition} und \textbf{Subtraktion} ausgeführt. Dieser Regel fehlen unter anderem \textbf{Potenz} und \textbf{Wurzel}.
+
+Eine vollständige Regel lautet: \enquote{Arbeite die List von oben nach unten ab und Operationen mit der selben Priorität/ dem selben Rang von links nach rechts in der Reihenfolge ihres Auftretens im Ausdruck (nicht in der Liste):}.
+
+\begin{enumerate}
+  \item \enquote{$(t)$}
+  \item \enquote{${t_1}^{t_2}$}, \enquote{$\sqrt[t_2]{t_1}$}
+  \item \enquote{$\times$}, \enquote{$\div$}
+  \item \enquote{$+$}, \enquote{$-$}
+\end{enumerate}
+
+\begin{beispiel}
+    \begin{equation}
+        2 + 3 \cdot 4 = 2 + (3 \cdot 4) = 2 + 12 = 14
+    \end{equation}
+\end{beispiel}
+
+
+\chapter{Prüfungstaktik}
+
+\section{Vorbereitung}
+\section{Priorisierung der Aufgaben}
+
+
+\section{Plausibilitätsprüfung}
+
+Die Aufgaben in den Prüfungen sind mit dem Bemühen gestellt plausible Anwendungen der Realität zu modellieren und ihre Beherrschung zu prüfen. Insbesondere sind damit auch die Zahlen i.d.R. so gewählt, dass eine Plausibilitätsprüfung mit gesundem Menschenverstand möglich ist. Errechnet man als Prüfling z.B. für das Volumen eines Stausees einige Liter (nicht einmal tausende), dann kann das nicht stimmen. Mit griffigen Beispielen für Größenordnungen, u.a. dem Liter als Flasche Cola, Packung Milch o.ä., und dem Kubikmeter als immer wieder benutztes (gerne mit Armen visualisierend) konkretes Beispiel (1.000 Liter) und dem Lehren von fortwährender skeptischer Plausibilitätsprüfung des (rechnenden) Tuns kann ein solcher Fehler sicher aufgedeckt werden und Zeit und Einsicht vorausgesetzt vom Prüfling korrigiert werden. Realistische Beispiele von Größenordnungen sollten möglichst von allen Dozenten häufig angeboten werden, insbesondere bietet sich neben der Mathematik selbst der naturwissenschaftliche Unterricht, hier zur Zeit der Geographie, an.
+
+\begin{uebung}
+    Wiederhole falls unsicher die Maßeinheiten und finde zu jeder Maßeinheiten für die Bereiche von $\frac{1}{1000}$, $\frac{1}{100}$, $\frac{1}{10}$, eins, zehn, hundert und tausend mal der Einheit ein für Dich gut bildlich vorstellbares Beispiel. Z.B. ein Liter Cola oder Milch und ein tausendstel Meter als Millimeter auf dem Geodreieck.
+\end{uebung}
+
+\begin{uebung}
+    Schätze ab: das Volumen des Raums in dem Du Dich gerade befindest, die Masse/ das Gewicht des Gebäudes in dem Du Dich gerade befindest, das Volumen Deines Körpers, die Entfernungen zum Rathaus, nach Berlin, nach New York, zum Mond, zur Sonne, die Länge Deiner Hand, deines Unterarms, der Spanne Deiner beiden ausgestreckten Arme, die Höhe eines Gebäudes, das Du aus dem Fenster sehen kannst, die Dichte von Wasser, Stahl, Holz, einem Menschen, wie viel Liter Wasser der Eder-Stausee fasst, wie viele Liter Wasser Du durchschnittlich pro Tag verbrauchst, die Masse der Erde, ...
+\end{uebung}
+
+
+\section{Proben rechnen}
+
+\appendix
+
+\chapter{Vokabeln}
+abziehen,
+addieren,
+der Beweis (pl. die Beweise),
+beweisen,
+die Addition (pl. die Additionen),
+der Ausdruck (pl. die Ausdrücke),
+ausdrücken,
+die Division (pl. die Divisionen),
+dividieren,
+die Grundrechenart (pl. die Grundrechenarten),
+hinreichend,
+die Multiplikation (pl. die Multiplikationen),
+notwendig,
+rechnen,
+die Rechnung (pl. die Rechnungen),
+subtrahieren,
+die Subtraktion (pl. die Subraktionen),
+die Voraussetzung (pl. die Voraussetzungen),
+zeigen
+
+
+\printglossary
+\printglossary[type=symbols,style=long]
+\printindex
+\printbibliography
+
+\end{document}
+
+
