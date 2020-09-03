@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5060,        155]
-NotebookOptionsPosition[      4488,        130]
-NotebookOutlinePosition[      4835,        145]
-CellTagsIndexPosition[      4792,        142]
+NotebookDataLength[      5668,        178]
+NotebookOptionsPosition[      4985,        149]
+NotebookOutlinePosition[      5333,        164]
+CellTagsIndexPosition[      5290,        161]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -126,10 +126,29 @@ Cell[BoxData["1572729"], "Output",
  CellChangeTimes->{{3.6858957744282513`*^9, 3.685895807914437*^9}, {
    3.6858959067284145`*^9, 3.685895948312377*^9}, 3.6858959980561934`*^9, 
    3.685896130911883*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Sum", "[", 
+  RowBox[{
+   RowBox[{"Quotient", "[", 
+    RowBox[{
+     RowBox[{"DivisorSigma", "[", 
+      RowBox[{"0", ",", "i"}], "]"}], ",", "2"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", 
+     RowBox[{
+      RowBox[{"10", "^", "6"}], "/", "4"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6858963292675114`*^9, 3.68589632927652*^9}}],
+
+Cell[BoxData["1572729"], "Output",
+ CellChangeTimes->{3.6858963308650465`*^9}]
 }, Open  ]]
 },
 WindowSize->{759, 833},
-WindowMargins->{{Automatic, 468}, {5, Automatic}},
+WindowMargins->{{Automatic, 474}, {62, Automatic}},
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -156,6 +175,10 @@ Cell[2846, 85, 176, 3, 30, "Output"]
 Cell[CellGroupData[{
 Cell[3059, 93, 1206, 29, 213, "Input"],
 Cell[4268, 124, 204, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4509, 132, 379, 11, 30, "Input"],
+Cell[4891, 145, 78, 1, 63, "Output"]
 }, Open  ]]
 }
 ]

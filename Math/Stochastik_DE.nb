@@ -1,0 +1,114 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4080,        106]
+NotebookOptionsPosition[      3477,         81]
+NotebookOutlinePosition[      3890,         97]
+CellTagsIndexPosition[      3847,         94]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Stochastik", "Title",
+ CellChangeTimes->{{3.6969698403112392`*^9, 3.6969698703707113`*^9}, {
+  3.6969699069469876`*^9, 3.696970007158758*^9}, {3.6969701367525625`*^9, 
+  3.696970279587187*^9}, {3.6969703210499463`*^9, 3.696970422932584*^9}, {
+  3.6969704553939257`*^9, 3.6969704578703475`*^9}, {3.696970558463152*^9, 
+  3.696970574345703*^9}, {3.6969719720663676`*^9, 3.696971999270838*^9}}],
+
+Cell["Wahrscheinlichkeitsrechnung", "Subtitle",
+ CellChangeTimes->{{3.6969720034152794`*^9, 3.696972007644219*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Erik Itter", "Author",
+ CellChangeTimes->{{3.6969720292858124`*^9, 3.696972031827236*^9}}],
+
+Cell["meine Chance", "Institution",
+ CellChangeTimes->{{3.6969720468135653`*^9, 3.6969720522989955`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Einleitung", "Section",
+ CellChangeTimes->{{3.6969721310077686`*^9, 3.6969721540447464`*^9}}],
+
+Cell[TextData[{
+ "\[OpenCurlyDoubleQuote]Die Stochastik (von altgriechisch \[Sigma]\[Tau]\
+\[Omicron]\[Chi]\[Alpha]\[Sigma]\[Tau]\[Iota]\[Kappa]\:1f74 \
+\[Tau]\:03ad\[Chi]\[Nu]\[Eta] stochastik\[EBar] techn\[EBar], lateinisch ars \
+conjectandi, also \:201aKunst des Vermutens\[OpenCurlyQuote], \:201aRatekunst\
+\[OpenCurlyQuote]) ist ein Teilgebiet der Mathematik und fasst als \
+Oberbegriff die Gebiete Wahrscheinlichkeitstheorie und Statistik zusammen. \
+Mathematische Stochastik besch\[ADoubleDot]ftigt sich mit der Beschreibung \
+und Untersuchung von Zufallsexperimenten wie zum Beispiel dem Werfen von Rei\
+\[SZ]zwecken, W\[UDoubleDot]rfeln oder M\[UDoubleDot]nzen sowie vom Zufall \
+beeinflussten zeitlichen Entwicklungen und r\[ADoubleDot]umlichen Strukturen.\
+\n\nSolche Ereignisse, Entwicklungen und Strukturen werden oft durch Daten \
+dokumentiert, f\[UDoubleDot]r deren Analyse die Statistik geeignete Methoden \
+bereitstellt. In diesem Fall entstehen die zuf\[ADoubleDot]lligen Einfl\
+\[UDoubleDot]sse in der Regel im Rahmen der zuf\[ADoubleDot]lligen Auswahl \
+einer Stichprobe aus einer eigentlich interessierenden Grundgesamtheit.\n\n\
+Insgesamt beinhaltet damit die Stochastik ein Spektrum an Methoden, mit denen \
+man sowohl die Wahrscheinlichkeit f\[UDoubleDot]r Lottogewinne oder die Gr\
+\[ODoubleDot]\[SZ]e der Unsicherheit bei Meinungsumfragen bestimmen kann. Die \
+Stochastik ist auch f\[UDoubleDot]r die Finanzmathematik von Bedeutung und \
+hilft mit ihrer Methodik beispielsweise bei der Preisfindung f\[UDoubleDot]r \
+Optionen. (",
+ ButtonBox["https://de.wikipedia.org/wiki/Stochastik",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://de.wikipedia.org/wiki/Stochastik"], None},
+  ButtonNote->"https://de.wikipedia.org/wiki/Stochastik"],
+ ")"
+}], "Text",
+ CellChangeTimes->{{3.6969721310077686`*^9, 3.6969721954840703`*^9}, {
+   3.6969722683034997`*^9, 3.696972268304001*^9}, {3.69697230420956*^9, 
+   3.6969723828066096`*^9}, 3.6969743517559395`*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1447, 1108},
+WindowMargins->{{102, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->FrontEnd`FileName[{"Book"}, "Monograph.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 397, 5, 83, "Title"],
+Cell[980, 29, 115, 1, 49, "Subtitle"],
+Cell[CellGroupData[{
+Cell[1120, 34, 96, 1, 42, "Author"],
+Cell[1219, 37, 105, 1, 15, "Institution"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1361, 43, 99, 1, 71, "Section"],
+Cell[1463, 46, 1986, 31, 143, "Text"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

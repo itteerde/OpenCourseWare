@@ -1,24 +1,25 @@
+package de.itteerde.euler;
+
 import java.math.BigInteger;
 
 public class Problem0025 {
 
 	public static void main(String[] args) {
-		
-		int n = 3;
-		BigInteger[] memory = new BigInteger[3];
-		memory[1]=new BigInteger("1");
-		memory[2]=new BigInteger("1");
-		
-		for(;;n++){
-			memory[0] = memory[1].add(memory[2]);
-			if(memory[0].toString().length() >= 1000){
+		BigInteger[] m = { BigInteger.ONE, BigInteger.ONE };
+		int n = 2;
+
+		for (;;) {
+
+			BigInteger fib = m[0].add(m[1]);
+			m[0] = m[1];
+			m[1] = fib;
+
+			n++;
+
+			if (m[1].toString().length() >= 1000) {
 				System.out.println(n);
 				return;
 			}
-			memory[1]=memory[2];
-			memory[2]=memory[0];
 		}
-
 	}
-
 }
